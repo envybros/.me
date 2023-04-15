@@ -13,15 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+logo: "/assets/images/EnvyLogo_Quouo.svg"
+title: ENVY BROS.
+email: devenvy100@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+github_username: pulp-pixel
+minimal_mistakes_skin: dark
+repository: "envybros/website"
 search: true
 
 # Build settings
@@ -58,34 +60,37 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: "펄프픽셀"
+  avatar: "/assets/images/EnvyAcademy.svg"
+  bio: "온갖 컴공 지식을 번역 및 공유합니다."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Linktree"
+      icon: "fas fa-fw fa-tree"
+      url: "https://linktr.ee/envybros"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/envybros"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/envy-baik-272948266/"
+    - label: "Blog"
+      icon: "fab fa fa-heart"
+      url: "https://blog.naver.com/devenvyy"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Linktree"
+      icon: "fas fa-fw fa-tree"
+      url: "https://linktr.ee/envybros"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/envybros"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/envy-baik-272948266/"
+    - label: "Blog"
+      icon: "fab fa fa-heart"
+      url: "https://blog.naver.com/devenvyy"
 
 defaults:
   # _posts
@@ -94,18 +99,39 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      # author_profile: true
+      # read_time: false
       comments: true
-      share: true
-      related: true
+      # share: true
+      # related: false
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      # author_profile: true
+comments:
+  provider: "giscus"
+  giscus:
+    #    repo_id              : "envybros/website" # Shown during giscus setup at https://giscus.app
+    #    category_name        : "docs" # Full text name of the category
+    #    category_id          : # Shown during giscus setup at https://giscus.app
+    #    discussion_term      : "docs" # "pathname" (default), "url", "title", "og:title"
+    #    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
+    #    theme                : "Github Dark" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    repo: "envybros/website"
+    repo_id: "R_kgDOJW6miA"
+    category: "General"
+    category_id: "DIC_kwDOJW6miM4CVyws"
+    mapping: "pathname"
+    strict: "0"
+    reactions-enabled: "1"
+    emit-metadata: "1"
+    input-position: "top"
+    theme: "dark"
+    lang: "ko"
+    crossorigin: "anonymous"
 
 category_archive:
   type: liquid

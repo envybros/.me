@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+# gem "jekyll", "~> 3.7"
+# gem "minimal-mistakes-jekyll"
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
@@ -14,4 +16,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "kramdown-parser-gfm"
 end
+
+gem "webrick", "~> 1.8"
