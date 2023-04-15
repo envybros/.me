@@ -4,11 +4,12 @@ main:
   - title: "Introduce"
     url: /about/
 
-sidebar-sample:
-  - title: "Parent Page A"
+cpp-sidebar:
+  - title: "C++ 배움터"
+  - title: "0 - 소개 / 시작하기"
     children:
-      - title: "Child Page A1"
-        url: /
+      - title: "0.1 - 튜토리얼 소개"
+        url: /cpp/2023-04-15-overview.md/
       - title: "Child Page A2"
         url: /
       - title: "Child Page A3"

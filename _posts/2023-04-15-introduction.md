@@ -1,13 +1,12 @@
 ---
 title: "ENVY Academy에 오신 걸 환영합니다."
 categories:
-  - C++
+  - cpp
 tags:
-  - Jekyll
-  - update
+  - cpp
 sidebar:
-  title: "Sample Title"
-  nav: sidebar-sample
+  title: "Contents"
+  nav: cpp-sidebar
 ---
 
 
