@@ -6,43 +6,14 @@ main:
 
 cpp-sidebar:
   - title: "C++ 배움터"
+    url: /cpp/overview/
   - title: "0 - 소개 / 시작하기"
     children:
       - title: "0.1 - 튜토리얼 소개"
-        url: /cpp/2023-04-15-overview.md/
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
-    children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
+        url: /cpp/00/_0-1_/
+      - title: "0.2 - 프로그래밍 언어 소개"
+        url: /cpp/00/_0-2_/
+      - title: "0.3 - C/C++ 소개"
+        url: /cpp/00/_0-3_/
+      - title: "0.4 - C++ 개발 입문"
+        url: /cpp/00/_0-4_/
