@@ -1,7 +1,7 @@
 ---
 title: "ENVY Academy에 오신 걸 환영합니다."
 categories:
-  - General
+  - C++
 tags:
   - Jekyll
   - update
