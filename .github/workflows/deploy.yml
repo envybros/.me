@@ -3,7 +3,7 @@ name: Build and Deploy Jekyll
 on:
   push:
     branches:
-      - feature-Updating-CPP-(From-gitbook) # 원하는 브랜치 이름으로 변경할 수 있습니다.
+      - main # 원하는 브랜치 이름으로 변경할 수 있습니다.
 
 jobs:
   build_and_deploy:
