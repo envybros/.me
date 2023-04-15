@@ -5,15 +5,15 @@ main:
     url: /about/
 
 cpp-sidebar:
-  - title: "C++ 배움터"
+  - title: "C++ 튜토리얼에 대하여"
     url: /cpp/overview/
   - title: "0 - 소개 / 시작하기"
     children:
       - title: "0.1 - 튜토리얼 소개"
-        url: /cpp/00/_0-1_/
+        url: /cpp/01/
       - title: "0.2 - 프로그래밍 언어 소개"
-        url: /cpp/00/_0-2_/
+        url: /cpp/02/
       - title: "0.3 - C/C++ 소개"
-        url: /cpp/00/_0-3_/
+        url: /cpp/03/
       - title: "0.4 - C++ 개발 입문"
-        url: /cpp/00/_0-4_/
+        url: /cpp/04/
