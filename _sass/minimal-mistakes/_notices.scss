@@ -107,3 +107,8 @@
 .notice--danger {
   @include notice($danger-color);
 }
+
+/* 타이틀 크기,, */
+.notice-title {
+  font-size: 1.5em; /* 원하는 폰트 크기로 설정 */
+}
