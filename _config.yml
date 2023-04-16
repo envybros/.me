@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-logo: "/assets/images/EnvyLogo_Quouo.svg"
+logo: "/assets/favicon/android-chrome-512x512.png"
 title: ENVY BROS.
 email: devenvy100@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -61,7 +61,8 @@ plugins:
 
 author:
   name: "펄프픽셀"
-  avatar: "/assets/images/EnvyAcademy.svg"
+
+  avatar: "/assets/images/avatar.svg"
   bio: "온갖 컴공 지식을 번역 및 공유합니다."
   links:
     - label: "Linktree"
