@@ -17,4 +17,5 @@ group :jekyll_plugins do
   gem "kramdown-parser-gfm"
 end
 
+gem 'public_suffix', '4.0.7'
 gem "webrick", "~> 1.8"
