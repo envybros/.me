@@ -17,3 +17,11 @@ cpp-sidebar:
         url: /cpp/03/
       - title: "0.4 - C++ 개발 입문"
         url: /cpp/04/
+      - title: "0.5"
+        url: /cpp/05/
+      - title: "0.6"
+        url: /cpp/06/
+      - title: "0.7"
+        url: /cpp/07/
+      - title: "0.8"
+        url: /cpp/08/
