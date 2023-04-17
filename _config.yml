@@ -25,6 +25,7 @@ github_username: pulp-pixel
 minimal_mistakes_skin: dark
 repository: "envybros/website"
 search: true
+future: true
 
 # Build settings
 markdown: kramdown
