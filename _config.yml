@@ -29,6 +29,11 @@ future: true
 
 # Build settings
 markdown: kramdown
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
