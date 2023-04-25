@@ -7,7 +7,7 @@
 - 자료구조 & 알고리즘 ([With Leet-Code](https://leetcode.com/explore/learn/))
 - 네트워크 ([With 탑다운 접근 8판](https://gaia.cs.umass.edu/kurose_ross/ppt.php))
 - 운영체제 ([With 공룡책](https://os-book.com/OS10/slide-dir/index.html))
-- 그래픽스 ([With Vulkan](https://vulkan-tutorial.com/))
+- 그래픽스 ([With OpenGL](https://learnopengl.com/))
 
 ## ENVY Engine
 - Not Yet
