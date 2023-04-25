@@ -10,18 +10,18 @@ cpp-sidebar:
   - title: "0 - 소개 / 시작하기"
     children:
       - title: "0.1 - 튜토리얼 소개"
-        url: /cpp/01/
+        url: /cpp/0.1/
       - title: "0.2 - 프로그래밍 언어 소개"
-        url: /cpp/02/
+        url: /cpp/0.2/
       - title: "0.3 - C/C++ 소개"
-        url: /cpp/03/
-      - title: "0.4 - C++ 개발 입문"
-        url: /cpp/04/
+        url: /cpp/0.3/
+      - title: "0.4 - C++ 개발 소개"
+        url: /cpp/0.4/
       - title: "0.5"
-        url: /cpp/05/
+        url: /cpp/0.5/
       - title: "0.6"
-        url: /cpp/06/
+        url: /cpp/0.6/
       - title: "0.7"
-        url: /cpp/07/
+        url: /cpp/0.7/
       - title: "0.8"
-        url: /cpp/08/
+        url: /cpp/0.8/
