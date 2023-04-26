@@ -88,8 +88,13 @@
   --prompt-warning-icon-color: #ef9c03;
   --prompt-danger-bg: rgb(248, 215, 218, 0.56);
   --prompt-danger-icon-color: #df3c30;
-  --prompt-img-bg: rgb(266, 266, 266, 0.8);
-  --prompt-general-bg: rgb(132, 132, 132, 0.8);
+
+  --prompt-img-bg: rgb(240, 240, 240, 0.8);
+  --prompt-img-icon-color: rgb(240, 240, 240, 0);
+  --prompt-general-bg: rgb(220, 220, 220, 0.8);
+  --prompt-general-icon-color: rgb(220, 220, 220, 0);
+  --prompt-source-bg: rgb(237, 112, 20, 0.8);
+  --prompt-source-icon-color: rgb(237, 112, 20, 0);
 
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);
