@@ -10,7 +10,7 @@ baseurl: ""
 # 웹페이지의 언어 › http://www.lingoes.net/en/translator/langcode.htm
 # `_data/locales` 폴더에 있는 파일 중 하나와 이름이 같으면 레이아웃 언어도 변경됩니다,
 # 그렇지 않으면 레이아웃 언어가 기본값인 'en'을 사용합니다.
-lang: ko
+lang: ko-KR
 
 # 시간대 변경 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone:
@@ -20,7 +20,7 @@ timezone:
 
 title: ENVY BROS # 메인 타이틀
 
-tagline: We are all strangers in a strange land 🦋 # 하위 제목으로 표시됩니다.
+tagline: 컴공 지식 연구소 🦋 # 하위 제목으로 표시됩니다.
 
 description: >- # SEO Meta와 atom feed에서 사용
   We are all strangers in a strange land 🦋
