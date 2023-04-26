@@ -163,6 +163,9 @@ blockquote {
     }
   }
 
+  @include prompt('img', '\f0eb', 'regular');
+  @include prompt('source', '\f0eb', 'regular');
+  @include prompt('general', '\f0eb', 'regular');
   @include prompt('tip', '\f0eb', 'regular');
   @include prompt('info', '\f06a');
   @include prompt('warning', '\f06a');
