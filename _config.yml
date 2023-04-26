@@ -3,58 +3,58 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
-# and doesn't have a custom domain.
+# 사이트 유형이 GitHub 페이지 프로젝트 사이트인 경우에만 다음 값을 '/PROJECT_NAME'으로 변경합니다.
+# 그리고 사용자 지정 도메인이 없는 경우
 baseurl: ""
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# 웹페이지의 언어 › http://www.lingoes.net/en/translator/langcode.htm
+# `_data/locales` 폴더에 있는 파일 중 하나와 이름이 같으면 레이아웃 언어도 변경됩니다,
+# 그렇지 않으면 레이아웃 언어가 기본값인 'en'을 사용합니다.
 lang: en
 
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+# 시간대 변경 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: ENVY BROS # 메인 타이틀
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: We are all strangers in a strange land 🦋 # 하위 제목으로 표시됩니다.
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- # SEO Meta와 atom feed에서 사용
+  We are all strangers in a strange land 🦋
 
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+# 사이트의 프로토콜 및 호스트 이름(예: 'https://username.github.io')을 입력합니다.
+url: "https://www.envybros.com"
 
 github:
-  username: github_username # change to your github username
+  username: envybros # Github 사용자 이름으로 변경
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: twitter_username # Twitter 사용자 아이디로 변경
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  # 전체 이름으로 변경.
+  # 글의 기본 작성자 및 바닥글에 저작권 소유자로 표시됩니다.
+  name: pulp-pixel
+  email: devenvy100@gmail.com # 이메일 주소로 변경
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
-    # Uncomment below to add more social links
+    # 첫 번째 요소는 저작권 소유자의 링크 역할을 합니다.
+    # - https://twitter.com/username # 트위터 홈페이지로 변경
+    - https://github.com/envybros # Github 홈페이지로 변경
+    # 소셜 링크를 더 추가하려면 아래 주석을 해제하세요.
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: # 인증 문자열을 입력하세요.
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# `jekyll-seo-tag` 설정 종료
 
 google_analytics:
-  id: # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
+  id: # Google 애널리틱스 ID를 입력합니다.
+  # Google 애널리틱스 페이지뷰 보고서 설정
   pv:
     proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
     cache_path: # the local PV cache data, friendly to visitors from GFW region
@@ -80,13 +80,13 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: assets/img/avatar.svg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -96,14 +96,14 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo: "envybros/.com" # <gh-username>/<repo>
+    repo_id: "R_kgDOJW6miA"
+    category: "Announcements"
+    category_id: "DIC_kwDOJW6miM4CVywr"
+    mapping: "pathname" # optional, default to 'pathname'
+    input_position: "top" # optional, default to 'bottom'
+    lang: "ko" # optional, default to the value of `site.lang`
+    reactions_enabled: 1 # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
