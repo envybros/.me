@@ -42,7 +42,7 @@ social:
   links:
     # 첫 번째 요소는 저작권 소유자의 링크 역할을 합니다.
     # - https://twitter.com/username # 트위터 홈페이지로 변경
-    - https://github.com/envybros # Github 홈페이지로 변경
+    - https://github.com/pulp-pixel # Github 홈페이지로 변경
     # 소셜 링크를 더 추가하려면 아래 주석을 해제하세요.
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -80,7 +80,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/img/avatar.svg
+avatar: assets/img/avatar.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
