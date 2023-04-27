@@ -15,12 +15,12 @@ lang: ko-KR
 # 시간대 변경 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone:
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# jekyll-seo-tag 설정 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: ENVY BROS # 메인 타이틀
+title: ENVY BROS. # 메인 타이틀
 
-tagline: 컴공 지식 연구소 🦋 # 하위 제목으로 표시됩니다.
+tagline: 컴퓨터 공학 지식 연구소 🦋 # 하위 제목으로 표시됩니다.
 
 description: >- # SEO Meta와 atom feed에서 사용
   We are all strangers in a strange land 🦋
@@ -56,21 +56,21 @@ google_analytics:
   id: # Google 애널리틱스 ID를 입력합니다.
   # Google 애널리틱스 페이지뷰 보고서 설정
   pv:
-    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path: # the local PV cache data, friendly to visitors from GFW region
+    proxy_endpoint: # 구글 앱 엔진의 구글 애널리틱스 슈퍼프록시 엔드포인트를 입력합니다.
+    cache_path: # GFW 지역의 방문자에게 적합한 로컬 PV 캐시 데이터
 
-# Prefer color scheme setting.
+# 색 구성표 기본 설정.
 #
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
+# 참고: 이 부분을 비워두면 시스템 기본 색상으로 설정됩니다, 
+# 그리고 다크 및 라이트 테마로 변경할 수 있는 토글이
+# 왼쪽 사이드 바 하단에 위치하게 됩니다.
 #
-# Available options:
+# 이용 가능한 옵션:
 #
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
+#     light  - 라이트 색상 구성표 사용
+#     dark   - 다크 색상 구성표 사용
 #
-theme_mode: # [light|dark]
+theme_mode: # [light|dark] (비워두는 편이 더 나아보인다. sass에서 색상을 바꾸는 편이..)
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -79,10 +79,10 @@ theme_mode: # [light|dark]
 # e.g. 'https://cdn.com'
 img_cdn:
 
-# the avatar on sidebar, support local or CORS resources
+# 사이드바에 쓰일 이미지, 로컬이나 CORS 리소스를 지원한다.
 avatar: assets/img/avatar.png
 
-# boolean type, the global switch for TOC in posts.
+# boolean 타입, TOC 게시물에 대한 전역 스위치
 toc: true
 
 comments:

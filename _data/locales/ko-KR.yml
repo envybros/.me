@@ -52,7 +52,7 @@ notification:
 # ----- Posts related labels -----
 
 post:
-  written_by: By
+  written_by: 작성자
   posted: 게시일
   updated: 업데이트
   words: 단어
