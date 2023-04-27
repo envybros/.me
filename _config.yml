@@ -13,7 +13,7 @@ baseurl: ""
 lang: ko-KR
 
 # 시간대 변경 › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: Asia/Seoul
 
 # jekyll-seo-tag 설정 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -31,8 +31,8 @@ url: "https://www.envybros.com"
 github:
   username: envybros # Github 사용자 이름으로 변경
 
-twitter:
-  username: twitter_username # Twitter 사용자 아이디로 변경
+# twitter:
+#   username: twitter_username # Twitter 사용자 아이디로 변경
 
 social:
   # 전체 이름으로 변경.
