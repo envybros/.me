@@ -32,13 +32,13 @@ copyright:
   license:
     template: 이 포스트는 저작권자의 :LICENSE_NAME 라이센스를 따릅니다.
     name: CC BY-NC-ND 4.0
-    link: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    link: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko
 
   # Displayed in the footer
-  brief: 저작권 일부 보유
+  brief: 저작권 일부 권리를 보유함.
   verbose: >-
     명시되지 않는 한 이 사이트의 블로그 게시물은 작성자의
-    Creative Commons Attribution 4.0 International(CC BY-NC-ND 4.0) 라이선스에 따라 사용이 허가되었습니다.
+    Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) 라이선스에 따라 사용이 허가되었습니다.
 
 meta: Powered by :PLATFORM with :THEME theme.
 
