@@ -1,11 +1,11 @@
 ---
-title: "C++ 배움터에 대여"
+title: "C++ 배움터에 대해서"
 categories: [C++ 배움터]
 tags: [c++]
 date: 2023-04-25 00:10
 ---
 
-여기 페이지에서는 [Learncpp](https://www.learncpp.com) 이라는 사이트를 번역해옵니다.  
+여기 페이지에서는 [Learncpp](https://www.learncpp.com){:target="_blank"} <- 사이트를 번역해옵니다.  
 번역 어색한 부분이나 틀린 부분 발견 시, 꼭 제보 부탁드려요~
 
 ---
