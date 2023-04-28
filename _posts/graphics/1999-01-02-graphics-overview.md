@@ -1,12 +1,7 @@
 ---
-title:  "그래픽스 (OpenGL) 교재 소개" 
-categories:
-  - graphics
-tags:
-  - [graphics, academy]
-#sidebar:
-#  title: "Contents"
-#  nav: cpp-sidebar
+title:  "그래픽스 (OpenGL) 교재 소개"
+categories: [그래픽스 배움터, OpenGL]
+tags: [opengl]
 date: 1999-01-02 00:00
 ---
 
