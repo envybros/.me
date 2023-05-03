@@ -4,33 +4,23 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## 溫故知新 🍊
-> 「옛것을 익히고 그것을 미루어서 새것을 앎.」 이라는 뜻으로, 옛 학문(學問)을 되풀이하여 연구(硏究)하고, 현실(現實)을 처리(處理)할 수 있는 새로운 학문(學問)을 이해(理解)하여야 비로소 남의 스승이 될 자격(資格)이 있다는 뜻
+## **저자 소개**
 
-### Let's embrace foolish bravery!
+안녕하세요. 저는 **펄프 픽셀**이라고 하는 사람입니다! 잘 부탁드려요 (❁´◡`❁)
 
->1. "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." - Ralph Waldo Emerson   
->세상이 당신을 다른 사람으로 만들려 할 때 진정한 자신을 찾는 것이 가장 큰 성과다.
+## **학력에 대하여...**
 
->2. "In the middle of every difficulty lies opportunity." - Albert Einstein   
->어려움의 한 가운데에는 항상 기회가 존재한다.
+우선 대학은 [홍익대학교 세종캠퍼스 | 게임소프트웨어 학과](https://www.husg.net/){:target="_blank"}를 전공했습니다.
 
->3. "I have not failed. I've just found 10,000 ways that won't work." - Thomas A. Edison   
->나는 실패한 것이 아니다. 그저 만 가지 동작하지 않는 방법을 찾은 것 뿐이다.
+대학은 2020년에 졸업을 했고, 졸업할 당시 제작한 게임, "_루비의 모험_"은 우수상을 수상했고, 또 작품성을 인정받아 신입생들 앞에서 특강까지 진행했었습니다. 
 
->4. "Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill   
->성공은 최종적인 것이 아니며, 실패는 치명적이지 않다. 중요한 것은 계속 나아가는 용기다.
+아래는 제가 당시 만든 게임 영상입니다. (설명용이라 좀 길어요)
 
->5. "Do what you can, with what you have, where you are." - Theodore Roosevelt   
->당신이 할 수 있는 것, 가진 것, 있는 곳에서 최선을 다하라.
+<iframe width="420" height="315" src="//www.youtube.com/embed/UvK9WCjA23g" frameborder="0" allowfullscreen="allowfullscreen">&nbsp;</iframe>
 
->6. "To succeed in life, you need two things: ignorance and confidence." - Mark Twain   
->인생에서 성공하기 위해서는 두 가지가 필요하다: 무지함과 자신감.
+이런 작품을 만들었답니다.
 
->7. "Stay hungry, stay foolish." - Steve Jobs
+그리고 바로 사회생활을 시작하게 됩니다.
 
+## **사회 생활 일대기** 
 
-<!-- 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
--->
