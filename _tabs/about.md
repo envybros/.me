@@ -4,33 +4,63 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## 溫故知新 🍊
-> 「옛것을 익히고 그것을 미루어서 새것을 앎.」 이라는 뜻으로, 옛 학문(學問)을 되풀이하여 연구(硏究)하고, 현실(現實)을 처리(處理)할 수 있는 새로운 학문(學問)을 이해(理解)하여야 비로소 남의 스승이 될 자격(資格)이 있다는 뜻
+## **저자 소개**
 
-### Let's embrace foolish bravery!
+안녕하세요. 저는 **펄프 픽셀**이라고 하는 사람입니다! 잘 부탁드려요 (❁´◡`❁)
 
->1. "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." - Ralph Waldo Emerson   
->세상이 당신을 다른 사람으로 만들려 할 때 진정한 자신을 찾는 것이 가장 큰 성과다.
+## **학력에 대하여...**
 
->2. "In the middle of every difficulty lies opportunity." - Albert Einstein   
->어려움의 한 가운데에는 항상 기회가 존재한다.
+우선 대학은 [홍대 세종캠 게임소프트웨어](https://www.husg.net/){:target="_blank"}를 전공했습니다.
 
->3. "I have not failed. I've just found 10,000 ways that won't work." - Thomas A. Edison   
->나는 실패한 것이 아니다. 그저 만 가지 동작하지 않는 방법을 찾은 것 뿐이다.
+대학은 2020년에 졸업을 했고, 졸업할 당시 제작한 게임, "_루비의 모험_"은 우수상을 수상했고, 또 작품성을 인정받아 신입생들 앞에서 특강까지 진행했었습니다. 
 
->4. "Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill   
->성공은 최종적인 것이 아니며, 실패는 치명적이지 않다. 중요한 것은 계속 나아가는 용기다.
+아래는 제가 당시 만든 게임 영상입니다. (설명용이라 좀 길어요)
 
->5. "Do what you can, with what you have, where you are." - Theodore Roosevelt   
->당신이 할 수 있는 것, 가진 것, 있는 곳에서 최선을 다하라.
+<iframe width="420" height="315" src="//www.youtube.com/embed/UvK9WCjA23g" frameborder="0" allowfullscreen="allowfullscreen">&nbsp;</iframe>
 
->6. "To succeed in life, you need two things: ignorance and confidence." - Mark Twain   
->인생에서 성공하기 위해서는 두 가지가 필요하다: 무지함과 자신감.
+이런 작품을 만들었답니다.
 
->7. "Stay hungry, stay foolish." - Steve Jobs
+그리고 바로 사회생활을 시작하게 됩니다.
 
+## **사회 생활 일대기** 
 
-<!-- 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+... 험난하고 도전적인 사회 생활을 지금 이 시점까지도 이어가고 있답니다.
+
+첫 회사에서는 OpenCV와 Azure Kinect를 사용해서 콘텐츠를 만들었었는데, 이 기술에 대한 어드바이스를 "장 부장"이라는 외부 개발자에게 받았습니다.
+
+협업이란 무엇인가.. 를 깨닫기도 했고, 대학 때 배운 선형대수학을 이래도 활용하나~ 싶었습니다.
+
+이후 초등수학 연산앱을 만드는 곳 (각 분야 전문가들이 두루두루 있는 곳)을 거쳐, 지금 메타버스 모바일 앱 개발 (에 건축을 곁들인..)을 하고 있습니다. (Flutter로 하고 있지요)
+
+## **로드맵**
+
+- **Academy 콘텐츠 순서**
+
+> 이 순서대로 진행, 이후 아래 엔진 제작 해금
+> 1. C++
+> 2. 자바스크립트
+> 3. 알고리즘 및 코테
+> 4. 그래픽스 (OpenGL)
+> 5. 네트워크
+> 6. 운영체제
 {: .prompt-tip }
--->
+
+- **Engine**
+
+> 웹 브라우저 (WebGL) 타겟으로 한 게임 엔진 만들기
+> 
+> 네트워킹 및 제작 난이도 등 최적화 이슈
+> 
+> 이 엔진 제작할 때 쯤, 여기 사이트 분리
+{: .prompt-tip }
+
+- **Games**
+
+> 위 엔진 어느 정도 다 만들 때 쯤 해금될 예정
+{: .prompt-tip }
+
+## **마무리**
+
+이래 만들 예정이랍니다. (10년은 걸릴지도)
+
+
