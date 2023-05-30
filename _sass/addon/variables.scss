@@ -30,6 +30,6 @@ $bottom-min-height: 35rem !default;
 $code-font-size: 0.85rem !default;
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-$font-family-base: 'Noto Sans KR', sans-serif;
-$font-family-heading: Lato, 'Noto Sans KR', sans-serif;
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/static/woff2/SUITE.css');
+$font-family-base: 'SUITE', sans-serif;
+$font-family-heading: Lato, 'SUITE', sans-serif;
