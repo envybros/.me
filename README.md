@@ -14,3 +14,7 @@
 
 ## ENVY Games
 > - Not Yet
+
+```bash
+bundle exec jekyll serve --livereload
+```
