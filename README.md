@@ -24,4 +24,11 @@ bundle exec jekyll serve --livereload
 {: .prompt-danger }
 {: .prompt-general }
 {: .prompt-img }
+
+  @include prompt('img', '\f0eb', 'regular');
+  @include prompt('general', '\f0eb', 'regular');
+  @include prompt('tip', '\f0eb', 'regular');
+  @include prompt('info', '\f06a');
+  @include prompt('warning', '\f06a');
+  @include prompt('danger', '\f071');
 ```
