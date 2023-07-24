@@ -18,3 +18,10 @@
 ```bash
 bundle exec jekyll serve --livereload
 ```
+
+```md
+{: .prompt-tip }
+{: .prompt-danger }
+{: .prompt-general }
+{: .prompt-img }
+```

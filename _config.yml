@@ -18,9 +18,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag 설정 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: ENVY BROS. # 메인 타이틀
+title: ENVY BROS # 메인 타이틀
 
-tagline: 컴퓨터 공학 지식 연구소 🦋 # 하위 제목으로 표시됩니다.
+tagline: "CODE ON MY MIND" # 하위 제목으로 표시됩니다.
 
 description: >- # SEO Meta와 atom feed에서 사용
   We are all strangers in a strange land 🦋
