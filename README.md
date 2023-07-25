@@ -1,5 +1,5 @@
 # ENVY BROS.
-> [ENVY BROS.com](https://www.envybros.com/)
+> [.me](https://www.envys.me/)
 
 ## ENVY Engine
 > - Not Yet
