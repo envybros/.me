@@ -89,6 +89,10 @@ fn main() {
 }
 ```
 
+### **추가로 읽어보기:**
+
+[라이브러리 문서](https://doc.rust-lang.org/stable/rust-by-example/meta/doc.html)
+
 ---
 
 ## **출력 서식 지정(Formatted print)**
@@ -178,6 +182,10 @@ fn main() {
 - Structure struct의 포맷을 시도하려는 줄의 주석을 없애보자. (TODO 참조)
 - 출력하려는 `println!` 매크로를 추가해보자: 표시되는 소수점 이하 자릿수를 조절하면 PI가 대략 3.152가 된다. 이 활동의 목적상, PI의 추정치로 `let pi = 3.141592`를 사용한다. (힌트: 표시할 소수점 이하 자릿수 설정에 대해서는 `std::fmt` 문서를 참조하자.)
 
+### **추가로 읽어보기:**
+
+[std::fmt](https://doc.rust-lang.org/std/fmt/), [macros](https://doc.rust-lang.org/stable/rust-by-example/macros.html), [struct](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html). [traits](https://doc.rust-lang.org/std/fmt/#formatting-traits). [dead_code](https://doc.rust-lang.org/stable/rust-by-example/attribute/unused.html)
+
 ---
 
 ## **디버그**
@@ -227,6 +235,10 @@ fn main() {
 ```
 
 `fmt::Display`를 수동으로 구현하여 디스플레이를 제어할 수 있다.
+
+### **추가로 읽어보기:**
+
+[attributes](https://doc.rust-lang.org/reference/attributes.html), [derive](https://doc.rust-lang.org/stable/rust-by-example/trait/derive.html), [std::fmt](https://doc.rust-lang.org/std/fmt/), [struct](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html)
 
 ---
 
@@ -335,6 +347,10 @@ Display: 3.3 + 7.2i
 Debug: Complex { real: 3.3, imag: 7.2 }
 ```
 
+### **추가로 읽어보기:**
+
+[derive](https://doc.rust-lang.org/stable/rust-by-example/trait/derive.html), [std::fmt](https://doc.rust-lang.org/std/fmt/), [macros](https://doc.rust-lang.org/stable/rust-by-example/macros.html), [struct](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html), [trait](https://doc.rust-lang.org/std/fmt/#formatting-traits), [use](https://doc.rust-lang.org/stable/rust-by-example/mod/use.html)
+
 ---
 
 ## **Testcase: List**
@@ -392,6 +408,10 @@ fn main() {
 ```text
 [0: 1, 1: 2, 2: 3]
 ```
+
+### **추가로 읽어보기:**
+
+[for](https://doc.rust-lang.org/stable/rust-by-example/flow_control/for.html), [ref](https://doc.rust-lang.org/stable/rust-by-example/scope/borrow/ref.html), [Result](https://doc.rust-lang.org/stable/rust-by-example/std/result.html), [struct](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html), [?](https://doc.rust-lang.org/stable/rust-by-example/std/result/question_mark.html), [vec!](https://doc.rust-lang.org/stable/rust-by-example/std/vec.html)
 
 ---
 
@@ -473,6 +493,10 @@ RGB (0, 0, 0) 0x000000
 
 - [각 색상을 두 번 이상 나열해야 할 수도 있다.](https://doc.rust-lang.org/std/fmt/#named-parameters)
 - `:0>2`를 사용하여 [width(너비) 2까지 0으로 채울 수 있다.](https://doc.rust-lang.org/std/fmt/#width)
+
+### **추가로 읽어보기:**
+
+[std::fmt](https://doc.rust-lang.org/std/fmt/)
 
 ---
 
