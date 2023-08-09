@@ -1,31 +1,73 @@
-use std::fmt; // `fmt` 모듈 등록
+#![allow(dead_code)]
 
-// `Vec`를 포함하는 `List`라는 구조체를 정의한다.
-struct List(Vec<i32>);
+#[derive(Debug)]
+struct Person {
+    name: String,
+    age: u8,
+}
 
-impl fmt::Display for List {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        // 튜플 인덱싱을 사용하여 값을 추출하고,
-        // `vec`에 대한 참조를 생성한다.
-        let vec = &self.0;
+// 단위 구조체
+struct Unit;
 
-        write!(f, "[")?;
+// 튜플 구조체
+struct Pair(i32, f32);
 
-        // `vec`에서 `v`를 반복함과 동시에
-        // `count`에서 반복 횟수 또한 열거한다.
-        for (count, v) in vec.iter().enumerate() {
-            // 첫 번째 요소를 제외한 모든 요소에 쉼표를 추가한다.
-            // 오류 시 반환하기 위해선 `?` 연산자를 사용하면 된다.
-            if count != 0 { write!(f, ", ")?; }
-            write!(f, "{}: {}", count, v)?;
-        }
+// 2개의 필드를 가진 구조체
+struct Point {
+    x: f32,
+    y: f32,
+}
 
-        // 열린 대괄호를 닫고 `fmt::Result` 값을 반환하자.
-        write!(f, "]")
-    }
+// 구조체를 다른 구조체의 필드로 재사용할 수 있다.
+struct Rectangle {
+    // Rectangle은 왼쪽 상단과 오른쪽 하단 모서리의 위치로 지정할 수 있다.
+    top_left: Point,
+    bottom_right: Point,
 }
 
 fn main() {
-    let v = List(vec![1, 2, 3]);
-    println!("{}", v);
+    // 필드 초기화 단축키를 사용하여 구조체 생성
+    let name = String::from("Peter");
+    let age = 27;
+    let peter = Person { name, age };
+
+    // 구조체 디버그 출력
+    println!("{:?}", peter);
+
+    // `Point` 인스턴스화
+    let point: Point = Point { x: 10.3, y: 0.4 };
+
+    // `Point`의 필드에 액세스
+    println!("point coordinates: ({}, {})", point.x, point.y);
+
+    // 구조체 업데이트 구문을 사용하여 다른 구조체의 필드를
+    // 통해 새로운 `Point`를 만든다.
+    let bottom_right = Point { x: 5.2, ..point };
+
+    // `bottom_right.y`는 `point`에서 해당 필드를 사용했기에,
+    // `point.y`와 동일하다.
+    println!("second point: ({}, {})", bottom_right.x, bottom_right.y);
+
+    // `let` 바인딩을 사용하여 `Point`의 구조를 변경한다.
+    let Point { x: left_edge, y: top_edge } = point;
+
+    let _rectangle = Rectangle {
+        // 구조체 인스턴스화도 표현식이다.
+        top_left: Point { x: left_edge, y: top_edge },
+        bottom_right: bottom_right,
+    };
+
+    // 단위 구조체 인스턴스화
+    let _unit = Unit;
+
+    // 튜플 구조체 인스턴스화
+    let pair = Pair(1, 0.1);
+
+    // 튜플 구조체의 필드에 액세스
+    println!("pair contains {:?} and {:?}", pair.0, pair.1);
+
+    // 튜플 구조체 해제 (Destructure)
+    let Pair(integer, decimal) = pair;
+
+    println!("pair contains {:?} and {:?}", integer, decimal);
 }
