@@ -2,7 +2,7 @@
 title: "Basic Trigonometry"
 categories: [Unity 연구소]
 tags: [Unity, Math]
-date: 2023-07-18 00:20
+date: 2023-08-18 00:20
 math: true
 img_path: /assets/img/unity/math
 ---
@@ -54,15 +54,15 @@ img_path: /assets/img/unity/math
 
 공식은 다음과 같다.
 
-$$sin(θ) = 높이(Opposite)/빗변(Hypotenuse)$$
+$$sin(θ) = \frac{높이(Opposite)}{빗변(Hypotenuse)}$$
 
-$$cos(θ) = 밑변(Adjacent)/빗변(Hypotenuse)$$
+$$cos(θ) = \frac{밑변(Adjacent)}{빗변(Hypotenuse)}$$
 
-$$tan(θ) = 높이(Opposite)/밑변(Adjacent)$$
+$$tan(θ) = \frac{높이(Opposite)}{밑변(Adjacent)}$$
 
 예를 들어, *a = 3*이고 *h(빗변)이 6*이라고 가정해보자. **β**의 밑변과 빗변이 주어졌으므로, 우리는 β의 각도를 계산할 수 있다. 따라서
 
-$$cos(β) = 3/6$$
+$$cos(β) = \frac{3}{6}$$
 
 이는 cose(β) = 0.5와 같다. 이제 이 값을 계산하기 위해서는 역 코사인(inverse cosine)을 사용해야 한다:
 
