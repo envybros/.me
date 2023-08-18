@@ -2,7 +2,7 @@
 title: "blender basic"
 categories: [blender 연구소]
 tags: [Blender]
-date: 2023-07-18 00:10
+date: 2023-08-18 00:10
 img_path: /assets/img/blender/
 ---
 
