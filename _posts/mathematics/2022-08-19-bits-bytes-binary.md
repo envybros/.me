@@ -2,7 +2,7 @@
 title: "Bits, Bytes, Binary"
 categories: [Unity 연구소]
 tags: [Unity, Math]
-date: 2023-08-19 00:10
+date: 2022-08-19 00:10
 math: true
 img_path: /assets/img/unity/math
 ---
