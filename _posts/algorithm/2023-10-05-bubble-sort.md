@@ -1,5 +1,5 @@
 ---
-title: "버블 정렬"
+title: "버블 정렬 (Bubble Sort)"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
 date: 2023-10-05 00:10
@@ -56,7 +56,7 @@ void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n-1; i++) {
         // n-i-1: 매 반복마다 가장 큰 요소가 마지막으로 이동하고,
         // 정렬되지 않은 부분만을 대상으로 진행할 수 있도록 한다.
-        for (int j=0; j<n-i-1; j++) {
+        for (int j = 0; j < n-i-1; j++) {
             if (arr[j] > arr[j+1]) {
                 swap(arr[j], arr[j+1]);
             }
