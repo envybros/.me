@@ -2,7 +2,7 @@
 title: "투 포인터 (Two pointer)"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-07 00:10
+date: 2023-09-07 01:20
 math: true
 img_path: /assets/img/algorithm/
 ---
