@@ -2,7 +2,7 @@
 title: "슬라이딩 윈도우 (Sliding window)"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-08 01:20
+date: 2023-09-09 01:10
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -173,7 +173,7 @@ int findLength(vector<int>& nums, int k) {
 }
 ```
 
-`left`에서 시작하여 `right`에서 끝나는 부분 배열의 길이는 `right - left + 1`이다. 앞서 언급했듯이, 이 알고리즘의 시간 복잡도는 for 루프 내에서 수행되는 모든 작업이 $$O(1)$$ 복잡도를 가지기 때문에 $$O(n)$$이며, 여기서 `n`은 배열의 길이다. 3개의 정수 변수만 사용하기 때문에 공간 복잡도는 상수다.
+`left`에서 시작하여 `right`에서 끝나는 부분 배열의 길이는 `right - left + 1`이다. 앞서 언급했듯이, 이 알고리즘의 시간 복잡도는 for 루프 내에서 수행되는 모든 작업이 $$O(1)$$ 복잡도를 가지기 때문에 $$O(n)$$이며, 여기서 $$n$$은 배열의 길이다. 3개의 정수 변수만 사용하기 때문에 공간 복잡도는 상수다.
 
 ---
 
