@@ -2,7 +2,7 @@
 title: "슬라이딩 윈도우 (Sliding window)"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-09 01:10
+date: 2023-09-08 02:10
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -293,7 +293,7 @@ function fn(arr, k):
 
 ---
 
-> **예제 4**. 정수 배열 `num`와 정수 `k`가 주어졌을 때, 길이가 `k`인 부분 배열 중 가장 큰 합을 가진 부분 배열의 합을 구하라.
+> **예제 4**. 정수 배열 `nums`와 정수 `k`가 주어졌을 때, 길이가 `k`인 부분 배열 중 가장 큰 합을 가진 부분 배열의 합을 구하라.
 {: .prompt-general }
 
 앞서 언급했듯이 길이 `k`의 윈도우를 만든 다음 배열을 따라 슬라이드하면 된다. 한 번에 한 요소씩 추가하고 제거하여 윈도우가 `k` 크기를 유지하도록 한다. `i`에 값을 추가하는 경우 `i - k`에서 값을 제거해야 한다.
