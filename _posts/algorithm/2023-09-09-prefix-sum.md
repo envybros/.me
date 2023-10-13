@@ -156,10 +156,4 @@ public:
 
 ---
 
-## **마무리**
-
-이것이 배열과 문자열에 대해 살펴볼 마지막 주요 패턴이다.
-
----
-
 출처: [Leetcode](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4503/)
