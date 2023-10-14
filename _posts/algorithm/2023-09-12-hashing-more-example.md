@@ -255,24 +255,24 @@ public:
 
 ### 존재 여부 확인
 
-- 217. [중복 포함](https://leetcode.com/problems/contains-duplicate/)
-- 1436. [목적지 도시](https://leetcode.com/problems/destination-city/)
-- 1496. [경로 교차점](https://leetcode.com/problems/path-crossing/)
+- [217. 중복 포함](https://leetcode.com/problems/contains-duplicate/)
+- [1436. 목적지 도시](https://leetcode.com/problems/destination-city/)
+- [1496. 경로 교차점](https://leetcode.com/problems/path-crossing/)
 
 ### 카운팅
 
-- 1748. [고유 요소의 합계](https://leetcode.com/problems/sum-of-unique-elements/)
-- 1394. [배열에서 행운의 정수 찾기](https://leetcode.com/problems/find-lucky-integer-in-an-array/)
-- 1207. [고유 발생 횟수](https://leetcode.com/problems/unique-number-of-occurrences/)
-- 451. [빈도별로 문자 정렬](https://leetcode.com/problems/sort-characters-by-frequency/)
-- 1512. [좋은 쌍의 수](https://leetcode.com/problems/number-of-good-pairs/)
-- 930. [합계가 있는 이진 부분 배열](https://leetcode.com/problems/binary-subarrays-with-sum/)
-- 1695. [최대 삭제 값](https://leetcode.com/problems/maximum-erasure-value/)
-- 567. [문자열의 순열](https://leetcode.com/problems/permutation-in-string/)
+- [1748. 고유 요소의 합계](https://leetcode.com/problems/sum-of-unique-elements/)
+- [1394. 배열에서 행운의 정수 찾기](https://leetcode.com/problems/find-lucky-integer-in-an-array/)
+- [1207. 고유 발생 횟수](https://leetcode.com/problems/unique-number-of-occurrences/)
+- [451. 빈도별로 문자 정렬](https://leetcode.com/problems/sort-characters-by-frequency/)
+- [1512. 좋은 쌍의 수](https://leetcode.com/problems/number-of-good-pairs/)
+- [930. 합계가 있는 이진 부분 배열](https://leetcode.com/problems/binary-subarrays-with-sum/)
+- [1695. 최대 삭제 값](https://leetcode.com/problems/maximum-erasure-value/)
+- [567. 문자열의 순열](https://leetcode.com/problems/permutation-in-string/)
 
 ### 일반
 
-- 205. [동형 문자열](https://leetcode.com/problems/isomorphic-strings/)
-- 290. [단어 패턴](https://leetcode.com/problems/word-pattern/)
-- 791. [사용자 지정 정렬 문자열](https://leetcode.com/problems/custom-sort-string/)
-- 1657. [두 문자열이 가까운지 확인](https://leetcode.com/problems/determine-if-two-strings-are-close/)
+- [205. 동형 문자열](https://leetcode.com/problems/isomorphic-strings/)
+- [290. 단어 패턴](https://leetcode.com/problems/word-pattern/)
+- [791. 사용자 지정 정렬 문자열](https://leetcode.com/problems/custom-sort-string/)
+- [1657. 두 문자열이 가까운지 확인](https://leetcode.com/problems/determine-if-two-strings-are-close/)
