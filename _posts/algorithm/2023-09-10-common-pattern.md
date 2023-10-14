@@ -122,4 +122,27 @@ public string buildString(String s) {
 
 ---
 
+## **문제 풀이**
+
+### **투 포인터**
+
+- 557. [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+- 917. [Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)
+- 283. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+- 2000. [Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/)
+
+### **슬라이딩 윈도우**
+
+- 209. [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+- 1456. [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+- 1208. [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/)
+
+### **누적 합**
+
+- 1732. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
+- 724. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+- 303. [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+
+---
+
 출처: [Leetcode](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4504/)
