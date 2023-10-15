@@ -161,4 +161,28 @@ LeetCode와 같은 플랫폼에서는 처음 시도할 때 몇 가지 단계를 
 
 ---
 
+## **보너스 문제**
+
+### 빠른 포인터와 느린 포인터
+
+- [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)
+- [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
+- [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)
+
+### 링크드 리스트 뒤집기
+
+- [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+- [2074. Reverse Nodes in Even Length Groups](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/)
+- [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)
+
+### 일반
+
+- [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
+- [1290. Convert Binary Number in a Linked List to Integer](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/)
+- [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
+- [707. Design Linked List](https://leetcode.com/problems/design-linked-list/)
+
+---
+
 출처: [Leetcode](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/704/linked-lists/4600/)
