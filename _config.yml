@@ -96,7 +96,7 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: "envybros/.com" # <gh-username>/<repo>
+    repo: "envybros/.me" # <gh-username>/<repo>
     repo_id: "R_kgDOJW6miA"
     category: "Announcements"
     category_id: "DIC_kwDOJW6miM4CVywr"
