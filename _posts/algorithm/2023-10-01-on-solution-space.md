@@ -2,7 +2,7 @@
 title: "솔루션 공간에서 이진 탐색"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-31 01:30
+date: 2023-10-01 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -127,6 +127,8 @@ public:
 
 음수는 허용되지 않으므로, `x`보다 큰 두 요소 사이의 차이가 존재할 수 없다. 우리는 탐색 공간을 `[0, x]`로 식별했다. 마지막으로, 주어진 노력에 대한 `check` 함수를 구현해야 한다. 우리는 트리와 그래프 장에서 여러 번 했던 것처럼 행렬을 그래프로 모델링할 수 있다. 왼쪽 상단의 사각형에서 DFS를 수행하고 오른쪽 하단의 사각형에 도달하려고 시도한다. 노드 사이의 차이가 `effort` 이하인 경우에만 이웃으로 이동한다.
 
+{% raw %}
+
 ```cpp
 class Solution {
 public:
@@ -190,6 +192,8 @@ public:
     }
 };
 ```
+
+{% endraw %}
 
 DFS는 $$O(m \cdot n)$$ 시간이 걸리며, 이진 탐색은 최대 요소가 입력된 k에 대해 $$O(\log{}k)$$ 번 실행된다. 이로 인해 시간 복잡도는 $$O(m \cdot n \cdot \log{}k)$$가 된다. DFS를 수행하기 위해 스택과 seen에 $$O(m \cdot n)$$ 공간이 사용된다.
 
