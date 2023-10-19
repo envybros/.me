@@ -2,7 +2,7 @@
 title: "백트래킹 (Backtracking)"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-31 01:30
+date: 2023-10-02 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---

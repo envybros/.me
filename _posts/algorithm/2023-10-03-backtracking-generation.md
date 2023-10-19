@@ -2,7 +2,7 @@
 title: "[백트래킹] 생성 (Generation)"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-31 01:30
+date: 2023-10-03 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---
