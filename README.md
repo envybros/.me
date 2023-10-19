@@ -28,7 +28,7 @@ img, general, tip, info, warning, danger
 루비 문법 무시하기
 
 {% raw %}
- Do Something
+
 {% endraw %}
 
 ```
