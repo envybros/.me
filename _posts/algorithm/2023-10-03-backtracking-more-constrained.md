@@ -248,6 +248,19 @@ public:
 
 ---
 
+## **보너스 문제**
+
+- [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
+- [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+- [2305. Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/)
+- [1415. The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)
+- [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/)
+- [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
+- [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+- [980. Unique Paths III](https://leetcode.com/problems/unique-paths-iii/)
+
+---
+
 출처: [Leetcode](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/711/backtracking/4537/)
 
 <!--
