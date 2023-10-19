@@ -263,6 +263,27 @@ while 루프의 모든 반복에서 현재 가장 무거운 사람을 보트에 
 
 ---
 
+## **보너스 문제**
+
+- [1833. Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/)
+- [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)
+- [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/)
+- [1005. Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/)
+- [2410. Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/)
+- [1663. Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/)
+- [2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/)
+- [2405. Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)
+- [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- [2384. Largest Palindromic Number](https://leetcode.com/problems/largest-palindromic-number/)
+- [2178. Maximum Split of Positive Even Integers](https://leetcode.com/problems/maximum-split-of-positive-even-integers/)
+- [2139. Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score/)
+- [2457. Minimum Addition to Make Integer Beautiful](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/)
+- [1024. Video Stitching](https://leetcode.com/problems/video-stitching/)
+- [2136. Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/)
+- [1326. Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
+
+---
+
 출처: [Leetcode](https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/709/greedy/4647/)
 
 <!--
