@@ -1,5 +1,5 @@
 ---
-title: "[이진 탐색] 솔루션 공간에 대하여"
+title: "솔루션 공간에서 이진 탐색"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
 date: 2023-09-31 01:30
@@ -267,6 +267,30 @@ public:
 최소값을 찾고 있다고 가정하고 정답이 `x`라고 하자. `check(x)`를 수행한 후, 우리는 `right = x - 1`로 설정한다. 왜냐하면 `check(x)`는 `true`를 반환할 것이고, 우리는 더 나은 정답을 찾기 위해 오른쪽 경계를 이동시킬 것이기 때문이다. 보다시피, 정확한 정답은 이제 우리의 탐색 공간 밖에 실제로 있다. 이는 `check`의 모든 미래의 반복이 실패할 것이라는 것을 의미하며, 결국 우리는 `check(x - 1)`을 시도할 때까지 `left`를 계속 증가시킬 것이다. 이것은 실패하고 `left = (x - 1) + 1 = x`를 설정한다. 우리의 while 루프는 `left > right` 때문에 종료되고, `left`는 정답에 있다.
 
 대신 최대값을 찾고 있다면, `check(x)`를 수행한 후에 `left = x + 1`을 설정한다. 또한, 정확한 정답은 탐색 공간 밖에 있고 모든 미래의 체크가 실패할 것이다. 결국, 우리는 `check(x + 1)`을 시도하고, 실패하며, `right = (x + 1) - 1 = x`를 설정한다. 루프는 `right < left` 때문에 종료되고, `right`는 정답을 가리킨다.
+
+## **보너스 문제**
+
+### 배열에서 이진 탐색
+
+- [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [1855. Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/)
+- [2476. Closest Nodes Queries in a Binary Search Tree](https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/)
+- [2250. Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/)
+- [1533. Find the Index of the Large Integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/)
+- [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [2251. Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/)
+
+### 솔루션 공간에서 이진 탐색
+
+- [2187. Minimum Time to Complete Trips](https://leetcode.com/problems/minimum-time-to-complete-trips/)
+- [2226. Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/)
+- [2517. Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/)
+- [2141. Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/)
+- [1482. Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/)
+- [778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)
+- [1970. Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/)
+- [2258. Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire/)
 
 ---
 
