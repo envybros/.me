@@ -160,40 +160,40 @@ public:
 
 ### 이진 트리
 
-[100. Same Tree](https://leetcode.com/problems/same-tree/)
-[872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
-[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
-[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
-[113. Path Sum II](https://leetcode.com/problems/path-sum-ii/)
-[1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/)
-[437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)
-[1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
+- [100. Same Tree](https://leetcode.com/problems/same-tree/)
+- [872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
+- [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+- [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+- [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/)
+- [1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/)
+- [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)
+- [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
 
 ### 이진 트리: BFS
 
-[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
-[1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
-[637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
-[1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)
+- [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- [1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
+- [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
+- [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/)
 
 ### 이진 탐색 트리
 
-[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
-[1305. All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)
-[235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
-[450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
+- [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+- [1305. All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/)
+- [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
 
 ### 그래프
 
-[997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
-[1615. Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)
-[463. Island Perimeter](https://leetcode.com/problems/island-perimeter/)
-[1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
-[1376. Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)
-[2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/)
-[990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
-[886. Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)
-[994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
+- [997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
+- [1615. Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/)
+- [463. Island Perimeter](https://leetcode.com/problems/island-perimeter/)
+- [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+- [1376. Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)
+- [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/)
+- [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
+- [886. Possible Bipartition](https://leetcode.com/problems/possible-bipartition/)
+- [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
 
 ---
 
