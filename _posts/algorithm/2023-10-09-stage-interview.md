@@ -1,5 +1,5 @@
 ---
-title: "코드 인터뷰 단계"
+title: "인터뷰 단계"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
 date: 2023-10-09 02:30
