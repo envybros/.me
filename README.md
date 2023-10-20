@@ -37,4 +37,10 @@ img, general, tip, info, warning, danger
 
 ```
 
+```md
+중간부터 넘버링하기
+
+{:start="3"}
+```
+
 -->
