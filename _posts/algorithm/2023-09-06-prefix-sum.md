@@ -2,7 +2,7 @@
 title: "[DSA] 구간 합"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-09 01:30
+date: 2023-09-06 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---
