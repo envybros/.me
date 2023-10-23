@@ -1,30 +1,28 @@
-fn is_subsequence(s: String, t: String) -> bool {
-    let mut i = 0;
-    let mut j = 0;
-    let s_chars: Vec<char> = s.chars().collect();
-    let t_chars: Vec<char> = t.chars().collect();
-
-    while i < s_chars.len() && j < t_chars.len() {
-        if s_chars[i] == t_chars[j] {
-            i += 1;
-        }
-        j += 1;
+fn num_subarray_product_less_than_k(nums: &[i32], k: i32) -> i32 {
+    if k <= 1 {
+        return 0;
     }
 
-    i == s_chars.len()
+    let (mut ans, mut left, mut curr) = (0, 0, 1);
+
+    for right in 0..nums.len() {
+        curr *= nums[right];
+
+        while curr >= k {
+            curr /= nums[left];
+            left += 1;
+        }
+
+        ans += right - left + 1;
+    }
+
+    ans as i32
 }
 
 fn main() {
-    // 테스트 케이스
-    let test_cases = vec![
-        ("abc".to_string(), "ahbgdc".to_string(), true),
-        ("axc".to_string(), "ahbgdc".to_string(), false),
-    ];
+    let nums = vec![10, 5, 2, 6];
+    let k = 100;
+    let result = num_subarray_product_less_than_k(&nums, k);
 
-    // 모든 테스트 케이스를 실행하고 결과를 출력
-    for (s, t, expected) in test_cases {
-        assert_eq!(is_subsequence(s, t), expected);
-    }
-
-    println!("All tests passed.");
+    println!("{:?}", result);
 }
