@@ -2,7 +2,7 @@
 title: "[DSA] 슬라이딩 윈도우"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Array, String, Sliding-window]
-date: 2023-09-05 01:10
+date: 2023-09-04 01:10
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -41,7 +41,7 @@ img_path: /assets/img/algorithm/
 
 **첫째**, 문제는 대게 `유효한` 부분 배열에 대한 명시적이거나 암시적인 `제약 조건`을 정의한다. 유효한 부분 배열이 되기 위한 두 가지 구성 요소는 다음과 같다:
 
-1. 제약 조건: 이것은 부분 배열의 어떤 특성을 의미한다. 배열의 합, 고유한 요소의 수, 특정 요소의 빈도 등이 여기에 해당한다.
+1. 제약 조건: 부분 배열의 어떤 특성을 의미한다. 배열의 합, 고유한 요소의 수, 특정 요소의 빈도 등이 여기에 해당한다.
 2. 제약 조건에 대한 수치적 제한: 부분 배열이 유효하다고 간주되기 위해 제약 조건이 충족해야 하는 구체적인 숫자 기준이다.
 
 예를 들어, 부분 배열이 유효하다고 선언되는 경우가 있는데, 그 기준은 배열의 합이 `10` 이하일 때이다. 여기서 `제약 조건`은 부분 배열의 합이고, `수치적 제한`은 `<= 10`라는 것이다. 따라서 부분 배열의 합이 `10` 이하인 경우, 그 배열은 제약 조건을 만족시키므로 유효하다.
@@ -421,6 +421,24 @@ int findBestSubarray(vector<int>& nums, int k) {
     }
     
     return ans;
+}
+```
+
+```rs
+fn find_best_subarray(nums: &Vec<i32>, k: usize) -> i32 {
+    let mut curr = 0;
+    // let mut curr: i32 =nums.iter().take(k_len).sum();
+    for &num in nums.iter().take(k) {
+        curr += num;
+    }
+
+    let mut ans = curr;
+    for i in k..nums.len() {
+        curr += nums[i] - nums[i - k];
+        ans = ans.max(curr);
+    }
+    
+    ans
 }
 ```
 
