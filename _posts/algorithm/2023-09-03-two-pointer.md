@@ -1,7 +1,7 @@
 ---
 title: "[DSA] 투 포인터"
 categories: [Algorithm 연구소]
-tags: [Algorithm, DSA, Two-Pointer]
+tags: [Algorithm, DSA, Array, String, Two-Pointer]
 date: 2023-09-03 03:20
 math: true
 img_path: /assets/img/algorithm/

@@ -1,33 +1,23 @@
-fn combine(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {
-    let mut ans = Vec::new();
-    let (mut i, mut j) = (0, 0);
+fn find_length(nums: Vec<i32>, k: i32) -> i32 {
+    let (mut left, mut curr, mut ans) = (0, 0, 0);
 
-    while i < arr1.len() && j < arr2.len() {
-        if arr1[i] < arr2[j] {
-            ans.push(arr1[i]);
-            i += 1;
-        } else {
-            ans.push(arr2[j]);
-            j += 1;
+    for right in 0..nums.len() {
+       curr += nums[right];
+        while curr > k {
+            curr -= nums[left];
+            left += 1;
         }
-    }
 
-    while i < arr1.len() {
-        ans.push(arr1[i]);
-        i += 1;
-    }
-
-    while j < arr2.len() {
-        ans.push(arr2[j]);
-        j += 1;
+        ans = std::cmp::max(ans, (right as i32) - (left as i32) + 1);
     }
 
     ans
 }
 
 fn main() {
-    let vec = vec![-4,-1,0,3,10];
-    let vec2 = vec![-5,-3,1,2,4];
+    let nums = vec![1, 2, 3, 4, 5];
+    let k = 6;
+    let result = find_length(nums, k);
 
-    println!("{:?}", combine(vec, vec2));
+    println!("{:?}", result);
 }
