@@ -35,6 +35,8 @@ img, general, tip, info, warning, danger
 - linked list: 링크드 리스트
 - sliding window: 슬라이딩 윈도우
 - technique: 기법
+- subarray: 부분 배열
+- iterable: 반복 가능한 객체
 
 ---
 
