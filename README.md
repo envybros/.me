@@ -38,6 +38,7 @@ img, general, tip, info, warning, danger
 - subarray: 부분 배열
 - iterable: 반복 가능한 객체
 - A constraint metric: 제약 조건
+- window: 윈도우
 
 ---
 
@@ -49,13 +50,13 @@ img, general, tip, info, warning, danger
 
 - 문장에 한국인이 잘 쓰지 않는 단어나 표현이 있는 것 같다.
 - 문단을 나눌 부분이 있다면, 그렇게 해주어야 한다.
-- **공적인 표현**(이다. 한다. 등)을 유지해주길 바란다.
+- **공적인 표현**(이다. 한다. 등)을 유지해 주길 바란다.
 
 ---
 
 ## 추가 요청 사항
 
-- 아래 CPP코드를 Rust로 바꿔달라
+- 아래 CPP코드를 Rust로 바꿔야 한다.
 - 또한 main 함수를 통해, 테스트 코드도 만들어주길 바란다.
 - main문은 `println!("{:?}", result);`이 포함되어야 한다.
 
