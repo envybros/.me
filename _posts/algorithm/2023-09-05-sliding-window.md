@@ -1,8 +1,8 @@
 ---
 title: "슬라이딩 윈도우 (Sliding window)"
 categories: [Algorithm 연구소]
-tags: [Algorithm]
-date: 2023-09-08 02:10
+tags: [Algorithm, DSA, Sliding-window]
+date: 2023-09-05 01:10
 math: true
 img_path: /assets/img/algorithm/
 ---
