@@ -1,28 +1,21 @@
-fn num_subarray_product_less_than_k(nums: &[i32], k: i32) -> i32 {
-    if k <= 1 {
-        return 0;
+fn find_max_average(nums: Vec<i32>, k: i32) -> f64 {
+    let k_len: usize = k as usize;
+
+    let mut curr: i32 = nums.iter().take(k_len).sum();
+
+    let mut ans: f64 = curr as f64 / k as f64;
+    for i in k_len..nums.len() {
+        curr += nums[i] - nums[i-k_len];
+        ans = ans.max(curr as f64 / k as f64);
     }
 
-    let (mut ans, mut left, mut curr) = (0, 0, 1);
-
-    for right in 0..nums.len() {
-        curr *= nums[right];
-
-        while curr >= k {
-            curr /= nums[left];
-            left += 1;
-        }
-
-        ans += right - left + 1;
-    }
-
-    ans as i32
+    ans
 }
 
 fn main() {
-    let nums = vec![10, 5, 2, 6];
-    let k = 100;
-    let result = num_subarray_product_less_than_k(&nums, k);
+    let nums = vec![1,12,-5,-6,50,3];
+    let k = 4;
+    let result = find_max_average(nums, k);
 
     println!("{:?}", result);
 }

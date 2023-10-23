@@ -39,6 +39,7 @@ img, general, tip, info, warning, danger
 - iterable: 반복 가능한 객체
 - A constraint metric: 제약 조건
 - window: 윈도우
+- prefix sum: 구간 합
 
 ---
 
