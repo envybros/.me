@@ -1,5 +1,5 @@
 ---
-title: "슬라이딩 윈도우 (Sliding window)"
+title: "[DSA] 슬라이딩 윈도우"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Array, String, Sliding-window]
 date: 2023-09-05 01:10
