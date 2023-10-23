@@ -2,7 +2,7 @@
 title: "삼각형 기본 (삼각함수)"
 categories: [Unity 연구소]
 tags: [Unity, Math]
-date: 2023-08-18 00:20
+date: 2023-05-18 00:20
 math: true
 img_path: /assets/img/unity/math
 ---
