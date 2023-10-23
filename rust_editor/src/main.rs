@@ -1,17 +1,25 @@
-fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
-    let n = nums.len();
-    let mut ans = vec![0; n];
+fn combine(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {
+    let mut ans = Vec::new();
+    let (mut i, mut j) = (0, 0);
 
-    let (mut left, mut right) = (0, n-1);
-
-    for i in (0..n).rev() {
-        if nums[left].abs() > nums[right].abs() {
-            ans[i] = nums[left] * nums[left];
-            left += 1;
+    while i < arr1.len() && j < arr2.len() {
+        if arr1[i] < arr2[j] {
+            ans.push(arr1[i]);
+            i += 1;
         } else {
-            ans[i] = nums[right] * nums[right];
-            right -= 1;
+            ans.push(arr2[j]);
+            j += 1;
         }
+    }
+
+    while i < arr1.len() {
+        ans.push(arr1[i]);
+        i += 1;
+    }
+
+    while j < arr2.len() {
+        ans.push(arr2[j]);
+        j += 1;
     }
 
     ans
@@ -19,6 +27,7 @@ fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
 
 fn main() {
     let vec = vec![-4,-1,0,3,10];
+    let vec2 = vec![-5,-3,1,2,4];
 
-    println!("{:?}", sorted_squares(vec));
+    println!("{:?}", combine(vec, vec2));
 }

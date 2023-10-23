@@ -298,7 +298,7 @@ fn combine(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {
 }
 ```
 
-이전 두 예제와 마찬가지로, 이 알고리즘은 시간 복잡도가 $O(n)$이며, 공간 복잡도는 $O(1)$이다(출력을 추가 공간으로 계산하지 않는 경우, 이는 보통 그렇다).
+이전 두 예제와 마찬가지로, 이 알고리즘은 시간 복잡도가 $O(n)$이며, 공간 복잡도는 $O(1)$이다(출력을 추가 공간으로 계산하지 않는 경우).
 
 ---
 
@@ -324,20 +324,17 @@ fn combine(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {
 이 과정을 통해 볼 수 있듯이, 문자가 일치하든 그렇지 않든, 우리는 계속해서 `t` 내에서 앞으로 나아간다. 문자가 일치할 경우, 해당 문자를 다시 사용할 수 없기 때문에 앞으로 나아가야 한다. 반면, 일치하지 않는 경우, 그 문자는 필요하지 않으므로 건너뛴다고 생각할 수 있다. `s`의 모든 문자와 일치하는 것을 목표로 하기 때문에, 일치하는 문자를 찾았을 때만 `s`에서 앞으로 나아간다.
 
 ```cpp
-class Solution {
-public:
-    bool isSubsequence(string s, string t) {
-        int i = 0, j = 0;
-        while (i < s.size() && j < t.size()) {
-            if (s[i] == t[j]) {
-                i++;
-            }
-            j++;
+bool isSubsequence(string s, string t) {
+    int i = 0, j = 0;
+    while (i < s.size() && j < t.size()) {
+        if (s[i] == t[j]) {
+            i++;
         }
-        
-        return i == s.size();
+        j++;
     }
-};
+    
+    return i == s.size();
+}
 ```
 
 ```rs
