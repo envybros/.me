@@ -1,21 +1,22 @@
-fn find_max_average(nums: Vec<i32>, k: i32) -> f64 {
-    let k_len: usize = k as usize;
+fn ways_to_split_array(nums: Vec<i32>) -> i32 {
+    let mut ans = 0;
+    let mut left_section = 0;
+    let total: i32 = nums.iter().sum();
 
-    let mut curr: i32 = nums.iter().take(k_len).sum();
-
-    let mut ans: f64 = curr as f64 / k as f64;
-    for i in k_len..nums.len() {
-        curr += nums[i] - nums[i-k_len];
-        ans = ans.max(curr as f64 / k as f64);
+    for i in 0..nums.len() - 1 {
+        left_section += nums[i];
+        let right_section = total - left_section;
+        if left_section >= right_section {
+            ans += 1;
+        }
     }
 
     ans
 }
 
 fn main() {
-    let nums = vec![1,12,-5,-6,50,3];
-    let k = 4;
-    let result = find_max_average(nums, k);
+    let nums = vec![1, 2, 3, 4];
+    let result = ways_to_split_array(nums);
 
     println!("{:?}", result);
 }
