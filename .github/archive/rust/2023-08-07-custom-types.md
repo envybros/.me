@@ -163,7 +163,6 @@ fn main() {
 }
 ```
 
-
 ---
 
 참고 링크: [Custom Types](https://doc.rust-lang.org/rust-by-example/custom_types.html)
