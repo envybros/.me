@@ -2,7 +2,7 @@
 title: "[DSA] 슬라이딩 윈도우"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Array, String, Sliding-window]
-date: 2023-09-04 01:10
+date: 2022-09-05 01:10
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -427,7 +427,7 @@ int findBestSubarray(vector<int>& nums, int k) {
 ```rs
 fn find_best_subarray(nums: &Vec<i32>, k: usize) -> i32 {
     let mut curr = 0;
-    // let mut curr: i32 =nums.iter().take(k_len).sum();
+    // let mut curr: i32 =nums.iter().take(k).sum();
     for &num in nums.iter().take(k) {
         curr += num;
     }
