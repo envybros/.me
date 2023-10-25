@@ -1,8 +1,8 @@
 ---
 title: "[Rust] 숫자 맞추기 게임"
 categories: [Rust 연구소]
-tags: [Rust]
-date: 2023-02-03 01:30
+tags: [Rust, Guessing-game]
+date: 2023-02-02 01:30
 img_path: /assets/img/rust/
 ---
 
@@ -774,5 +774,5 @@ fn main() {
 
 ---
 
-> 출처: [rust-lang book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html#programming-a-guessing-game)
+> 출처: [rust-lang book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
 {: .prompt-info }
