@@ -2,7 +2,7 @@
 title: "[Rust] 숫자 맞추기 게임"
 categories: [Rust 연구소]
 tags: [Rust]
-date: 2023-02-02 01:30
+date: 2023-02-03 01:30
 img_path: /assets/img/rust/
 ---
 
