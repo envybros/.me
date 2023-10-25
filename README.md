@@ -66,7 +66,9 @@ img, general, tip, info, warning, danger
 - line: 줄
 - arms: 분기
 - Rust: Rust
+- type: 타입
 - annotation: 어노테이션
+- Error: 에러
 
 ---
 
