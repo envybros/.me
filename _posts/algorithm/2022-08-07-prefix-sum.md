@@ -2,7 +2,7 @@
 title: "[DSA] 구간 합"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Array, String, Prefix-sum]
-date: 2022-09-07 01:30
+date: 2022-08-07 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -225,6 +225,17 @@ fn ways_to_split_array(nums: Vec<i32>) -> i32 {
 ## **마무리**
 
 배열과 문자열에 대한 주요 패턴의 마지막 챕터를 살펴보았다. 다음 문서에서는 몇 가지 더 일반적인 트릭과 패턴을 다룰 예정이다.
+
+## **보너스 문제**
+
+- [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
+- [1413. Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/)
+- [2090. K Radius Subarray Averages](https://leetcode.com/problems/k-radius-subarray-averages/)
+- [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
+- [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+- [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+
+---
 
 ---
 
