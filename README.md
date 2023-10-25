@@ -1,6 +1,6 @@
 # ENVY's
 
-> [envys.me](https://www.envys.me/)
+> Me
 
 <!--
 ```bash
