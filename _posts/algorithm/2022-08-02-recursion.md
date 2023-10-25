@@ -2,7 +2,7 @@
 title: "[DSA] 재귀 함수"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Recursion]
-date: 2022-09-02 02:10
+date: 2022-08-02 02:10
 math: true
 img_path: /assets/img/algorithm/
 ---

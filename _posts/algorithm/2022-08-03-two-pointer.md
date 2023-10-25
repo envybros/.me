@@ -2,7 +2,7 @@
 title: "[DSA] 투 포인터"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Array, String, Two-Pointer]
-date: 2022-09-03 03:20
+date: 2022-08-03 03:20
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -366,6 +366,15 @@ fn is_subsequence(s: String, t: String) -> bool {
 
 > 이 코스의 장과 글들은 이전 장에서 배운 개념들을 이후 장에 적용할 수 있도록 순서대로 구성되어 있다. 투 포인터는 이 문서에서 다룬 것 이상으로 더 많은 활용 방안이 있으며, 이것이 투 포인터의 마지막 등장은 아니니 걱정하지 않아도 된다.
 {: .prompt-tip }
+
+## **보너스 문제**
+
+- [344. Reverse String](https://leetcode.com/problems/reverse-string/)
+- [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+- [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+- [917. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/)
+- [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+- [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/)
 
 ---
 

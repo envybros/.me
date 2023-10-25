@@ -2,7 +2,7 @@
 title: "[DSA] 슬라이딩 윈도우"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Array, String, Sliding-window]
-date: 2022-09-05 01:10
+date: 2022-08-05 01:10
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -449,6 +449,14 @@ for 문의 전체 반복은 $n$과 같으며, 여기서 $n$은 `nums`의 길이�
 ## **마무리**
 
 슬라이딩 윈도우는 다양한 상황에서 활용 가능한 중요한 패턴이다. 이 문서에서는 슬라이딩 윈도우 문제의 기본적인 개념만을 소개하였다는 점을 강조하고 싶다. 많은 슬라이딩 윈도우 문제들이 해시맵을 사용하므로, 해시맵에 대해 배운 후에 다양한 슬라이딩 윈도우 문제를 추가로 다룰 예정이다.
+
+## **보너스 문제**
+
+- [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+- [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
+- [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+- [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+- [1208. Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/)
 
 ---
 

@@ -2,7 +2,7 @@
 title: "[배열 및 문자열] 자주 쓰는 패턴 및 트릭"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2023-09-08 01:30
+date: 2023-08-08 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---
