@@ -1,5 +1,5 @@
 ---
-title: "[Rust] 추측 게임 프로그래밍"
+title: "[Rust] 숫자 맞추기 게임"
 categories: [Rust 연구소]
 tags: [Rust]
 date: 2023-02-02 01:30
@@ -34,7 +34,7 @@ $ cd guessing_game
 
 생성된 *Cargo.toml* 파일을 살펴보자.
 
-파일명: Cargo.toml
+파일명: *Cargo.toml*
 
 ```toml
 [package]
@@ -49,7 +49,7 @@ edition = "2021"
 
 `cargo new`는 "Hello, world!" 프로그램을 생성한다. 이번에는 *src/main.rs* 파일을 확인하자.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 fn main() {
@@ -57,7 +57,7 @@ fn main() {
 }
 ```
 
-이제 `cargo run` 명령어를 사용하여 이 "Hello, world!" 프로그램을 컴파일하고 동일한 단계에서 실행해보자.
+이제 `cargo run` 명령어를 사용하여 이 "Hello, world!" 프로그램을 컴파일하고 실행해보자.
 
 ```bash
 $ cargo run
@@ -67,17 +67,17 @@ $ cargo run
 Hello, world!
 ```
 
-`run` 명령어는 이 게임에서와 같이 프로젝트를 빠르게 반복할 필요가 있을 때 유용하며, 각 루프를 빠르게 테스트하고 다음 단계로 넘어갈 수 있게 한다.
+`run` 명령어는 이 게임에서와 같이 프로젝트를 빠르게 반복할 필요가 있을 때 유용하며, 각 루프를 빠르게 테스트하고 다음 단계로 넘어갈 수 있게 해준다.
 
-*src/main.rs* 파일을 다시 열어보자. 이 파일에서 모든 코드를 작성할 것이다.
+*src/main.rs* 파일을 다시 열어보자. 우리는 이 파일에 코드를 작성할 것이다.
 
 ---
 
 ## **추측 프로세스**
 
-추측 게임 프로그램의 첫 부분은 유저로부터 입력을 요청하고, 그 입력을 처리하며, 입력이 예상된 형태인지 확인하는 부분이다. 우선, 프로그램을 시작하기 위해, 유저에게 추측을 입력하도록 허용해야 한다. 아래 코드를 *src/main.rs*에 작성해보자.
+숫자 맞추기 게임 프로그램의 첫 부분은 유저로부터 입력을 요청하고, 그 입력을 처리하며, 입력이 예상된 형태인지 확인하는 부분이다. 우선, 프로그램을 시작하기 위해, 유저에게 추측을 입력하도록 허용해야 한다. 아래 코드를 *src/main.rs*에 작성해보자.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 // 유저로부터 추측을 얻어와 출력하는 코드
@@ -99,23 +99,23 @@ fn main() {
 }
 ```
 
-이 코드에는 많은 정보가 담겨 있으므로, 각 줄마다 살펴볼 필요가 있다. 유저로부터 입력을 얻고 결과를 출력하려면 `io` 입력/출력 라이브러리를 범위에 포함시켜야 한다. `io` 라이브러리는 표준 라이브러리인 `std`에서 제공된다:
+이 코드에는 많은 정보가 담겨 있다. 그러므로 각 줄마다 자세히 살펴볼 필요가 있다. 유저로부터 입력을 얻고 결과를 출력하려면 `io` 입력/출력 라이브러리를 범위에 포함시켜야 한다. `io` 라이브러리는 표준 라이브러리인 `std`에서 제공된다:
 
 ```rs
 use std::io;
 ```
 
-기본적으로 Rust는 모든 프로그램의 범위에 표준 라이브러리에서 정의한 일련의 항목을 포함시킨다. 이 세트는 *prelude*라고 부르며, [표준 라이브러리 문서](https://doc.rust-lang.org/std/prelude/index.html)에서 이 모든 것을 확인할 수 있다.
+Rust는 기본적으로 모든 프로그램에 표준 라이브러리에서 정의된 일련의 요소를 포함한다. 이러한 집합을 *prelude*라고 부르며, [표준 라이브러리 문서](https://doc.rust-lang.org/std/prelude/index.html)에서 확인할 수 있다.
 
-원하는 타입이 prelude에 없다면, `use` 문을 사용하여 명시적으로 해당 타입을 범위에 포함시켜야 한다. `std::io` 라이브러리를 사용하면 유저로부터 입력을 받을 수 있는 여러 유용한 기능을 제공받게 된다.
+만약 필요한 타입이 prelude에 포함되어 있지 않은 경우, 해당 타입을 스코프에 명시적으로 포함시키기 위해 `use` 문을 사용해야 한다. `std::io` 라이브러리를 이용하면, 유저 입력을 처리하는데 필요한 다양한 기능을 제공받을 수 있게 된다.
 
-`main` 함수는 프로그램의 진입점이다:
+`main` 함수는 프로그램의 시작 지점이다.
 
 ```rs
 fn main() {
 ```
 
-`fn` 구문은 새 함수를 선언하며, 괄호`()`는 매개변수가 없음을 나타내고, 중괄호 `{`는 함수의 본문을 시작한다.
+`fn` 구문은 새 함수를 선언하며, 괄호`()`는 매개변수가 없음을 나타내고, 중괄호 `{`는 함수의 본문이 시작된다는 것을 나타낸다.
 
 `println!`은 화면에 문자열을 출력하는 매크로이다:
 
@@ -137,7 +137,7 @@ fn main() {
     let mut guess = String::new();
 ```
 
-이 줄에서는 많은 일이 일어나고 있다. 우리는 `let` 문을 사용하여 변수를 생성한다. 여기에 또 다른 예가 있다:
+이 줄에서는 많은 일이 일어나고 있다. 우리는 `let` 문을 사용하여 변수를 생성한다. 아래에는 위와 다른 예시가 있다:
 
 ```rs
 let apples = 5;
@@ -153,7 +153,7 @@ let mut bananas = 5;  // 가변
 > 참고: `//` 구문은 해당 줄의 끝까지 주석 처리를 한다. Rust는 주석 내의 모든 것을 무시한다.
 {: .prompt-tip }
 
-추측 게임 프로그램으로 돌아가 보자. 이제 `let mut guess` 구문이 `guess`라는 이름의 가변 변수를 도입했음을 알 수 있다. 등호(`=`)는 Rust에게 변수에 무언가를 바인딩하려고 한다는 것을 알려준다. 등호의 오른쪽은 `guess`가 바인딩될 값으로, `String::new` 호출의 결과가 `guess`에 바인딩 될 것이다. 이 함수는 새로운 `String` 인스턴스를 반환한다. [String](https://doc.rust-lang.org/std/string/struct.String.html)은 표준 라이브러리에서 제공하는 문자열 타입으로, 확장 가능하고 UTF-8로 인코딩된 문자열이다.
+숫자 맞추기 게임 프로그램으로 돌아가 보자. 이제 `let mut guess` 구문이 `guess`라는 이름의 가변 변수를 도입했음을 알 수 있다. 등호(`=`)는 Rust에게 변수에 무언가를 바인딩하려고 한다는 것을 알려준다. 등호의 오른쪽은 `guess`가 바인딩될 값으로, `String::new` 호출의 결과가 `guess`에 바인딩 될 것이다. 이 함수는 새로운 `String` 인스턴스를 반환한다. [String](https://doc.rust-lang.org/std/string/struct.String.html)은 표준 라이브러리에서 제공하는 문자열 타입으로, 확장 가능하고 UTF-8로 인코딩된 문자열이다.
 
 `::new` 부분의 `::` 구문은 `new`가 `String` 타입의 연관 함수임을 나타낸다. 이 경우 연관 함수는 `String`에 대해 구현된 함수이다. 이 `new` 함수는 새로운 빈 문자열을 생성한다. 이러한 `new` 함수는 어떤 종류의 새 값을 만드는 함수에 대한 일반적인 이름이기 때문에 많은 타입에서도 쉽게 찾아볼 수 있다.
 
@@ -172,7 +172,7 @@ let mut bananas = 5;  // 가변
 
 프로그램이 시작될 때 `use std::io;`를 통해 `io` 라이브러리를 불러온다. 만약 이 과정을 거치지 않았다면, 함수 호출을 `std::io::stdin`이라고 작성해야 했을 것이다. `stdin` 함수는 터미널의 표준 입력을 다루는 `std::io::Stdin` 인스턴스를 반환한다.
 
-다음 줄의 `.read_line(&mut guess)`는 사용자의 입력을 받기 위해 사용된다. 이 코드는 표준 입력으로부터 데이터를 읽어서 `guess`라는 변수에 저장하는 작업을 수행한다. 여기서 `&mut guess`는 `read_line` 함수에게 사용자 입력을 저장할 위치를 알려주는 역할을 한다. 중요한 점은, `read_line`은 새로운 데이터를 추가하되 기존의 문자열 내용을 지우지 않는다는 것이다. 이 함수가 문자열을 변경할 수 있도록, `guess`는 가변적(`mutable`)이어야 한다.
+다음 줄의 `.read_line(&mut guess)`는 유저의 입력을 받기 위해 사용된다. 이 코드는 표준 입력으로부터 데이터를 읽어서 `guess`라는 변수에 저장하는 작업을 수행한다. 여기서 `&mut guess`는 `read_line` 함수에게 유저 입력을 저장할 위치를 알려주는 역할을 한다. 중요한 점은, `read_line`은 새로운 데이터를 추가하되 기존의 문자열 내용을 지우지 않는다는 것이다. 이 함수가 문자열을 변경할 수 있도록, `guess`는 가변적(`mutable`)이어야 한다.
 
 여기서 사용된 `&` 기호는 해당 인자가 참조임을 나타낸다. 이는 데이터의 실제 복사본을 만들지 않고도, 메모리 상의 데이터에 접근할 수 있도록 해준다. 참조는 복잡할 수 있지만, Rust의 이점 중 하나는 참조의 안전하고 편리한 사용을 제공한다는 것이다. 이 프로그램을 완성하기 위해서는 참조의 모든 세부 사항을 알 필요는 없다. 변수처럼 참조도 기본적으로 불변이며, 이를 변경 가능하게 만들기 위해서는 `&guess`가 아닌 `&mut guess`를 사용해야 한다는 점만 이해하면 충분하다. 이에 대한 자세한 내용은 추후 자세히 다룰 예정이다.
 
@@ -208,7 +208,7 @@ io::stdin().read_line(&mut guess).expect("Failed to read line");
 $ cargo build
    Compiling guessing_game v0.1.0 (file:///projects/guessing_game)
 warning: unused `Result` that must be used
-  --> src/main.rs:10:5
+  --> *src/main.rs*:10:5
    |
 10 |     io::stdin().read_line(&mut guess);
    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -249,7 +249,7 @@ println!("x = {x} and y + 2 = {}", y + 2);
 
 ### **첫 부분 테스트하기**
 
-추측 게임의 첫 부분을 테스트해야 한다. `cargo run` 명령어를 사용하여 실행해보자:
+숫자 맞추기 게임의 첫 부분을 테스트해야 한다. `cargo run` 명령어를 사용하여 실행해보자:
 
 ```bash
 $ cargo run
@@ -268,7 +268,7 @@ You guessed: 6
 
 ## **비밀 숫자 생성하기**
 
-다음 작업은 유저가 추측하게 될 비밀 숫자를 생성하는 것이다. 게임을 여러 번 플레이해도 재미있게 하기 위해 비밀 숫자는 매번 달라야 한다. 게임이 너무 어렵지 않게 1부터 100 사이의 임의의 숫자를 사용할 예정이다. 현재 Rust의 표준 라이브러리에는 난수 생성 기능이 없다. 하지만, Rust 팀은 이 기능을 제공하는 [rand](https://crates.io/crates/rand) 크레이트를 제공하고 있다.
+다음 작업은 유저가 추측하게 될 비밀 숫자를 생성하는 것이다. 게임을 여러 번 플레이해도 재미있게 하기 위해 비밀 숫자는 매번 달라져야 한다. 게임이 너무 어렵지 않게 1부터 100 사이의 임의의 숫자를 사용할 예정이다. 현재 Rust의 표준 라이브러리에는 난수 생성 기능이 없다. 하지만, Rust 팀은 이 기능을 제공하는 [rand](https://crates.io/crates/rand) 크레이트를 제공하고 있다.
 
 ---
 
@@ -276,9 +276,9 @@ You guessed: 6
 
 크레이트는 Rust 소스 코드의 집합체라는 것을 기억해야 한다. 우리가 지금까지 작성해온 프로젝트는 실행 가능한 파일을 생성하는 바이너리 크레이트이다. 반면, `rand` 크레이트는 다른 프로그램에서 사용하도록 만들어진 코드가 들어 있는 라이브러리 크레이트로, 독립적으로는 실행할 수 없다.
 
-여기서 Cargo의 강점을 볼 수 있다. `rand` 크레이트를 사용하기 전에, Cargo.toml 파일을 수정하여 `rand` 크레이트를 의존성 목록에 추가해야 한다. 이 파일을 연 후, Cargo가 당신을 위해 만들어둔 `[dependencies]` 섹션 아래에 다음과 같이 추가한다. 이 튜토리얼에서 사용하는 코드 예제와 일치하도록 여기에 적힌 버전 번호를 그대로 사용해야 한다:
+여기서 Cargo의 강점을 볼 수 있다. `rand` 크레이트를 사용하기 전에, *Cargo.toml* 파일을 수정하여 `rand` 크레이트를 의존성 목록에 추가해야 한다. 이 파일을 연 후, Cargo가 당신을 위해 만들어둔 `[dependencies]` 섹션 아래에 다음과 같이 추가한다. 이 튜토리얼에서 사용하는 코드 예제와 일치하도록 여기에 적힌 버전 번호를 그대로 사용해야 한다:
 
-파일명: Cargo.toml
+파일명: *Cargo.toml*
 
 ```toml
 [dependencies]
@@ -320,7 +320,7 @@ $ cargo build
 
 변경 사항 없이 `cargo build`를 바로 다시 실행하면, `Finished` 문구를 제외하고는 아무런 출력이 나오지 않는다. Cargo는 이미 의존성을 다운로드하고 컴파일했으며, *Cargo.toml* 파일에서도 우리가 아무 것도 변경하지 않았다는 사실을 알고 있다. 또한, 우리가 코드를 변경하지 않았기 때문에, 컴파일을 다시 진행할 필요가 없다. 그러므로 Cargo는 바로 이 명령을 종료시킨다.
 
-*src/main.rs* 파일을 열어서 작은 변경을 하고 저장한 다음 빌드하면, 다음 두 줄의 출력만을 볼 수 있다:
+*src/main.rs* 파일을 열어서 아무 변경을 하고, 저장 후 빌드하면, 다음 두 줄의 출력만을 볼 수 있다:
 
 ```bash
 $ cargo build
@@ -328,13 +328,13 @@ $ cargo build
     Finished dev [unoptimized + debuginfo] target(s) in 2.53 secs
 ```
 
-이 출력은 Cargo가 *src/main.rs* 파일의 작은 변경에 대해서만 빌드를 업데이트한다는 것을 보여준다. 의존성은 바뀌지 않았기 때문에, Cargo가 이미 다운로드하고 컴파일한 내용을 재사용할 수 있다고 판단했기 때문이다.
+이 출력은 Cargo가 *src/main.rs* 파일의 변경에 대해서만 빌드를 업데이트한다는 것을 보여준다. 의존성은 바뀌지 않았기 때문에, Cargo가 이미 다운로드하고 컴파일한 내용을 재사용할 수 있다고 판단했기 때문이다.
 
 ---
 
 ### **Cargo.lock 파일로 안정적인 빌드 환경 확보**
 
-Cargo에는 코드를 빌드할 때마다 누구든 동일한 결과물을 다시 만들 수 있는 기능이 내장되어 있다. 예를 들어, 다음 주에 `rand` crate의 새로운 0.8.6 버전이 출시되었다고 가정해보자. 이 버전에는 중요한 버그 수정이 포함되어 있지만, 당신의 코드를 망가뜨릴 수 있는 에러도 함께 있을 수 있다. 이런 문제를 방지하기 위해 Rust는 `cargo build` 명령어를 처음 실행할 때 *Cargo.lock* 파일을 생성하며, 이는 *guessing_game* 디렉토리에 저장된다.
+Cargo에는 코드를 빌드할 때마다 누구든 동일한 결과물을 만들 수 있는 기능이 내장되어 있다. 예를 들어, 다음 주에 `rand` crate의 새로운 0.8.6 버전이 출시되었다고 가정해보자. 이 버전에는 중요한 버그 수정이 포함되어 있지만, 당신의 코드를 망가뜨릴 수 있는 에러도 함께 있을 수 있다. 이런 문제를 방지하기 위해 Rust는 `cargo build` 명령어를 처음 실행할 때 *Cargo.lock* 파일을 생성하며, 이는 *guessing_game* 디렉토리에 저장된다.
 
 프로젝트를 처음 빌드할 때, Cargo는 필요한 의존성 버전을 확인하고 이 정보를 *Cargo.lock* 파일에 저장한다. 그 후 프로젝트를 다시 빌드할 때, Cargo는 이 *Cargo.lock* 파일이 있다는 것을 인지하고, 여기에 명시된 버전을 사용하여 불필요한 버전 확인 작업을 반복하지 않는다. 이렇게 함으로써, 빌드 과정이 항상 동일하게 재현될 수 있도록 보장한다. 다시 말해, *Cargo.lock* 파일 덕분에 유저가 직접 업그레이드하기로 결정할 때까지 프로젝트는 0.8.5 버전을 유지한다. *Cargo.lock* 파일은 빌드의 안정성을 보장하기 위해 중요하기 때문에, 프로젝트와 함께 버전 관리 시스템에 등록해야 한다(되도록 .ignore하지 말자).
 
@@ -365,9 +365,9 @@ rand = "0.9.0"
 
 ### **임의의 숫자 생성하기**
 
-rand 라이브러리를 사용하여 추측할 숫자를 생성해보자. 다음 단계는 Listing 2-3에 표시된 대로 src/main.rs를 업데이트하는 것이다.
+rand 라이브러리를 사용하여 추측할 숫자를 생성해보자. 다음 단계는 Listing 2-3에 표시된 대로 *src/main.rs*를 업데이트하는 것이다.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 // 임의의 숫자를 생성하기 위한 코드 추가
@@ -436,7 +436,7 @@ $ cargo run
 
 유저 입력과 임의의 숫자가 준비되었으므로, 이제 이들를 비교할 차례이다.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 > 아래 코드는 컴파일되지 않는다.
 {: .prompt-danger }
@@ -456,7 +456,7 @@ fn main() {
     match guess.cmp(&secret_number) {
         Ordering::Less => println!("너무 작다!"),
         Ordering::Greater => println!("너무 크다!"),
-        Ordering::Equal => println!("승리!"),
+        Ordering::Equal => println!("숫자를 맞췄습니다!"),
     }
 }
 ```
@@ -484,7 +484,7 @@ $ cargo build
    Compiling rand v0.8.5
    Compiling guessing_game v0.1.0 (file:///projects/guessing_game)
 error[E0308]: mismatched types
-  --> src/main.rs:22:21
+  --> *src/main.rs*:22:21
    |
 22 |     match guess.cmp(&secret_number) {
    |                 --- ^^^^^^^^^^^^^^ expected struct `String`, found integer
@@ -508,7 +508,7 @@ error: could not compile `guessing_game` due to previous error
 
 결국, 우리는 프로그램이 입력으로 받은 `String`을 실제 숫자 타입으로 변환하여 `secret_number`와 수치적으로 비교할 수 있도록 해야 한다. 이를 위해 `main` 함수 본문에 다음 줄을 추가한다.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 // --생략--
@@ -526,7 +526,7 @@ println!("당신이 추측한 숫자: {guess}");
 match guess.cmp(&secret_number) {
     Ordering::Less => println!("너무 작다!"),
     Ordering::Greater => println!("너무 크다!"),
-    Ordering::Equal => println!("승리!"),
+    Ordering::Equal => println!("숫자를 맞췄습니다!"),
 }
 ```
 
@@ -571,7 +571,7 @@ $ cargo run
 
 `loop` 키워드는 무한 루프를 생성한다. 유저들에게 숫자를 맞추는 데 더 많은 기회를 주기 위해서 루프를 추가하자:
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 // --생략--
@@ -586,7 +586,7 @@ loop {
     match guess.cmp(&secret_number) {
         Ordering::Less => println!("너무 작다!"),
         Ordering::Greater => println!("너무 크다!"),
-        Ordering::Equal => println!("승리!"),
+        Ordering::Equal => println!("숫자를 맞췄습니다!"),
     }
 }
 ```
@@ -613,10 +613,10 @@ $ cargo run
 Please input your guess.
 59
 당신이 추측한 숫자:59
-승리!
+숫자를 맞췄습니다!
 당신이 추측한 숫자를 입력하세요.
 quit
-thread `main` panicked at `Please type a number!: ParseIntError { kind: InvalidDigit }`, src/main.rs:28:47
+thread `main` panicked at `Please type a number!: ParseIntError { kind: InvalidDigit }`, *src/main.rs*:28:47
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
@@ -628,7 +628,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 유저가 이기면 게임이 종료되도록 `break` 문을 추가해 프로그램을 수정하자.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
         // --생략--
@@ -637,7 +637,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
             Ordering::Less => println!("너무 작다!"),
             Ordering::Greater => println!("너무 크다!"),
             Ordering::Equal => {
-                println!("승리!");
+                println!("숫자를 맞췄습니다!");
                 break;
             }
         }
@@ -645,7 +645,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 }
 ```
 
-**"승리!"** 메시지 다음에 `break` 문을 추가하면, 유저가 비밀 숫자를 맞혔을 때 프로그램이 루프를 빠져나와 종료된다. 이 루프가 `main` 함수의 마지막 부분이므로, 루프를 종료하면 프로그램도 종료된다.
+**"숫자를 맞췄습니다!"** 메시지 다음에 `break` 문을 추가하면, 유저가 비밀 숫자를 맞혔을 때 프로그램이 루프를 빠져나와 종료된다. 이 루프가 `main` 함수의 마지막 부분이므로, 루프를 종료하면 프로그램도 종료된다.
 
 ---
 
@@ -653,7 +653,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 게임을 더 완벽하게 만들기 위해, 유저가 숫자가 아닌 값을 입력했을 때 프로그램이 충돌하지 않고, 숫자가 아닌 입력을 무시한 채 유저가 추측을 계속할 수 있도록 변경하자. 아래와 같이, `guess`를 `String`에서 `u32`로 변환하는 코드를 수정해야 한다.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 // 숫자가 아닌 추측을 무시하고 프로그램을 충돌시키지 않고 다시 추측하도록 요청하기
@@ -702,15 +702,15 @@ foo
 당신이 추측한 숫자를 입력하세요.
 61
 당신이 추측한 숫자: 61
-승리!
+숫자를 맞췄습니다!
 ```
 
-마지막으로 약간의 수정을 거치면 추측 게임이 완성된다. 현재 프로그램은 여전히 비밀 숫자를 출력 중이다. 테스트 단계에서는 유용했지만, 실제 게임에서는 그러면 안 된다. 비밀 숫자를 출력하는 `println!` 문을 제거하자. 아래는 이 변경사항을 포함한 최종 코드이다.
+마지막으로 약간의 수정을 거치면 숫자 맞추기 게임이 완성된다. 현재 프로그램은 여전히 비밀 숫자를 출력 중이다. 테스트 단계에서는 유용했지만, 실제 게임에서는 그러면 안 된다. 비밀 숫자를 출력하는 `println!` 문을 제거하자. 아래는 이 변경사항을 포함한 최종 코드이다.
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
-// 추측 게임의 완성 코드
+// 숫자 맞추기 게임의 완성 코드
 
 use rand::Rng;
 use std::cmp::Ordering;
@@ -741,7 +741,7 @@ fn main() {
             Ordering::Less => println!("너무 작다!"),
             Ordering::Greater => println!("너무 크다!"),
             Ordering::Equal => {
-                println!("승리!");
+                println!("숫자를 맞췄습니다!");
                 break;
             }
         }
@@ -749,15 +749,15 @@ fn main() {
 }
 ```
 
-이제 추측 게임을 성공적으로 구축했다.
+이제 숫자 맞추기 게임을 성공적으로 구축했다.
 
 ---
 
 ## **마무리**
 
-이 프로젝트를 통해 `let`, `match`, 함수 등 Rust의 다양한 새로운 개념을 직접 체험할 수 있었고, 특히 외부 크레이트의 사용 방법을 배울 수 있었다. 다가오는 몇 장에서는 이 개념들에 대해 더 깊이 파고들 예정이다.
+이 프로젝트를 통해 `let`, `match`, 함수 등 Rust의 다양한 새로운 개념을 직접 체험할 수 있었고, 특히 외부 크레이트의 사용 방법을 배울 수 있었다. 곧 우리는 이 개념들에 대해 더 깊이 파고들 것이다.
 
-우선, 대부분의 프로그래밍 언어에서 공통적으로 볼 수 있는 개념인 변수, 데이터 타입, 함수 등을 살펴보고, Rust에서 이러한 개념들이 어떻게 적용되는지에 대해 배울 것이다. 그리고 Rust의 독특한 특성 중 하나인 **소유권** 개념을 탐색하며, 이는 Rust를 다른 프로그래밍 언어들과 구별해주는 중요한 요소이다.
+우선, 대부분의 프로그래밍 언어에서 공통적으로 볼 수 있는 개념인 변수, 데이터 타입, 함수 등을 살펴보고, Rust에서 이러한 개념들이 어떻게 적용되는지에 대해 배울 것이다. 그리고 Rust의 독특한 특성 중 하나인 **소유권** 개념을 탐색할 것이다. 이는 Rust를 다른 프로그래밍 언어들과 구별해주는 중요한 요소이다.
 
 그 후, 구조체와 메서드에 대한 문법을 다루는 방법을 배우고, 열거형이 어떻게 작동하는지에 대한 설명을 진행할 것이다. 이러한 내용들을 통해 프로그래밍에 대한 더 깊은 이해를 할 수 있을 것이다.
 
