@@ -2,7 +2,7 @@
 title: "[DSA] 배열과 문자열의 추가적인 패턴들"
 categories: [Algorithm 연구소]
 tags: [Algorithm]
-date: 2022-08-09 01:30
+date: 2022-08-08 01:30
 math: true
 img_path: /assets/img/algorithm/
 ---
