@@ -42,8 +42,6 @@ img, general, tip, info, warning, danger
 - prefix: 구간
 - prefix sum: 구간 합
 - Example: 예제
-- shadowing: 쉐도잉
-- Error: 에러
 
 ---
 
@@ -73,6 +71,13 @@ img, general, tip, info, warning, danger
 - Error: 에러
 - programmer: 개발자
 - binding: 바인딩
+- data type: 자료형
+- bool: 불리언
+- shadowing: 쉐도잉
+- Error: 에러
+- Compound Type: 복합 타입
+- destructuring: 구조 분해
+- variant: 너무 "변형"이라고만 하지 말고, 상황에 맞게 번역하면 된다.
 
 ---
 
