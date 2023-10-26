@@ -42,6 +42,8 @@ img, general, tip, info, warning, danger
 - prefix: 구간
 - prefix sum: 구간 합
 - Example: 예제
+- shadowing: 쉐도잉
+- Error: 에러
 
 ---
 
@@ -69,6 +71,8 @@ img, general, tip, info, warning, danger
 - type: 타입
 - annotation: 어노테이션
 - Error: 에러
+- programmer: 개발자
+- binding: 바인딩
 
 ---
 
@@ -119,4 +123,10 @@ img, general, tip, info, warning, danger
 {:start="3"}
 ```
 
+```md
+
+> 아래 코드는 컴파일되지 않는다.
+{: .prompt-danger }
+
+```
 -->
