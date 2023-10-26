@@ -20,10 +20,10 @@ img_path: /assets/img/rust/
 
 그리고 새로 만든 *variables* 디렉토리 안의 *src/main.rs* 파일을 열어 아래의 코드로 교체해보자.
 
+파일명: *src/main.rs*
+
 > 아래 코드는 컴파일되지 않는다.
 {: .prompt-danger }
-
-파일명: *src/main.rs*
 
 ```rs
 fn main() {
@@ -182,7 +182,7 @@ For more information about this error, try `rustc --explain E0308`.
 error: could not compile `variables` due to previous error
 ```
 
-이제 변수가 어떻게 작동하는지 알아보았으니, 변수가 가질 수 있는 다양한 데이터 타입에 대해 자세히 알아보자.
+이제 변수가 어떻게 작동하는지 알아보았으니, 변수가 가질 수 있는 다양한 자료형에 대해 자세히 알아보자.
 
 ---
 
