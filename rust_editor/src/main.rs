@@ -1,6 +1,6 @@
-use rand::Rng;
-use std::cmp::Ordering;
 use std::io;
+use std::cmp::Ordering;
+use rand::Rng;
 
 fn main() {
     println!("숫자를 맞춰보세요!");
