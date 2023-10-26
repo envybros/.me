@@ -2,7 +2,7 @@
 title: "[Rust] 변수와 가변성"
 categories: [Rust 연구소]
 tags: [Rust, Variable, Mutability]
-date: 2023-02-03 01:30
+date: 2023-03-03 01:30
 img_path: /assets/img/rust/
 ---
 
