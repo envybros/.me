@@ -49,6 +49,14 @@ img, general, tip, info, warning, danger
 
 ---
 
+## 추가 요청 사항
+
+- 아래 CPP코드를 Rust로 바꿔야 한다.
+- 또한 main 함수를 통해, 테스트 코드도 만들어주길 바란다.
+- main문은 `println!("{:?}", result);`이 포함되어야 한다.
+
+---
+
 # 현재 우리는 러스트 언어 튜토리얼을 작성 및 번역을 하고 있다
 
 ## 당신에게 요청하는 내용
@@ -78,6 +86,10 @@ img, general, tip, info, warning, danger
 - Compound Type: 복합 타입
 - destructuring: 구조 분해
 - variant: 너무 "변형"이라고만 하지 말고, 상황에 맞게 번역하면 된다.
+- parameter: 매개변수
+- argument: 인수
+- statements: 구문
+- expressions: 표현식
 
 ---
 
@@ -92,12 +104,6 @@ img, general, tip, info, warning, danger
 - **공적인 표현**("이다.", "한다." 등)을 유지해 주길 바란다.
 
 ---
-
-## 추가 요청 사항
-
-- 아래 CPP코드를 Rust로 바꿔야 한다.
-- 또한 main 함수를 통해, 테스트 코드도 만들어주길 바란다.
-- main문은 `println!("{:?}", result);`이 포함되어야 한다.
 
 ```
 
