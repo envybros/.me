@@ -90,6 +90,7 @@ img, general, tip, info, warning, danger
 - argument: 인수
 - statements: 구문
 - expressions: 표현식
+- comments: 주석
 
 ---
 
