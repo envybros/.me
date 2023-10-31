@@ -89,7 +89,10 @@ img, general, tip, info, warning, danger
 - parameter: 매개변수
 - argument: 인수
 - statements: 구문
+- let statement: let 문
+- if statement: if 문 (OOO statment: OOO 문)
 - expressions: 표현식
+- comments: 주석
 
 ---
 
@@ -135,6 +138,8 @@ img, general, tip, info, warning, danger
 ```
 
 ```md
+
+파일명: *src/main.rs*
 
 > 아래 코드는 컴파일되지 않는다.
 {: .prompt-danger }

@@ -2,7 +2,7 @@
 title: "[Rust] 함수"
 categories: [Rust 연구소]
 tags: [Rust, Function]
-date: 2023-03-06 01:30
+date: 2023-03-07 01:30
 math: true
 img_path: /assets/img/rust/
 ---
@@ -137,10 +137,10 @@ fn main() {
 
 구문은 값을 반환하지 않는 특성이 있기 때문에, `let` 구문을 다른 변수에 할당하려고 시도하면 에러가 발생한다.
 
+파일명: *src/main.rs*
+
 > 아래 코드는 컴파일되지 않는다.
 {: .prompt-danger }
-
-파일명: *src/main.rs*
 
 ```rs
 fn main() {
@@ -277,10 +277,10 @@ fn plus_one(x: i32) -> i32 {
 
 이 코드를 실행하면 `"x의 값은: 6"`이 출력된다. 하지만, `x + 1` 라인의 끝에 세미콜론을 추가하면, 그것은 표현식에서 구문으로 바뀌게 되고, 이로 인해 에러가 발생한다:
 
+파일명: *src/main.rs*
+
 > 아래 코드는 컴파일되지 않는다.
 {: .prompt-danger }
-
-파일명: *src/main.rs*
 
 ```rs
 fn main() {
