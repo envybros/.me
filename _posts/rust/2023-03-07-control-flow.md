@@ -2,8 +2,7 @@
 title: "[Rust] 제어 흐름"
 categories: [Rust 연구소]
 tags: [Rust, Control-flow]
-date: 2023-03-08 02:30
-math: true
+date: 2023-03-07 02:30
 img_path: /assets/img/rust/
 ---
 
