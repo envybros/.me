@@ -2,7 +2,7 @@
 title: "[Rust] 함수"
 categories: [Rust 연구소]
 tags: [Rust, Function]
-date: 2023-03-05 01:30
+date: 2023-03-06 01:30
 math: true
 img_path: /assets/img/rust/
 ---
