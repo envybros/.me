@@ -93,6 +93,9 @@ img, general, tip, info, warning, danger
 - if statement: if 문 (OOO statment: OOO 문)
 - expressions: 표현식
 - comments: 주석
+- borrow: 빌림
+- Move: 이동
+- trait: 트레잇
 
 ---
 
