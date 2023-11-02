@@ -96,6 +96,9 @@ img, general, tip, info, warning, danger
 - borrow: 빌림
 - Move: 이동
 - trait: 트레잇
+- scope: 유효 범위
+- compile time: 컴파일 타임
+- run time: 런타임
 
 ---
 
