@@ -2,7 +2,7 @@
 title: "[Rust] 소유권이란?"
 categories: [Rust 연구소]
 tags: [Rust, Ownership]
-date: 2023-03-08 03:30
+date: 2023-03-10 01:30
 img_path: /assets/img/rust/
 ---
 
