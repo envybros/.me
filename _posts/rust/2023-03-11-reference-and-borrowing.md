@@ -32,11 +32,11 @@ fn calculate_length(s: String) -> (String, usize) {
 }
 ```
 
-위 튜플 코드의 문제는 calculate_length를 호출한 후에도 String을 사용하려면 호출하는 함수로 String을 반환해야 한다는 점이다. 그 이유는 String이 calculate_length로 이동했기 때문이다. 하지만 String 값의 참조를 제공할 수 있다. 참조는 특정 주소를 따라 해당 주소에 저장된 데이터에 접근할 수 있는 방법이다. 이 데이터는 다른 변수에 의해 소유된다. 포인터와는 다르게 참조는 그 참조의 기간 동안 특정 타입의 유효한 값을 지칭하도록 보장된다.
+위 코드에서 calculate_length 함수를 호출한 후에도 String을 사용하고 싶다면, 호출된 함수에서 String을 반환해야 한다. 이렇게 해야 하는 이유는 String이 calculate_length로 넘어가면서 소유권이 이동되었기 때문이다. 여기서, String의 참조를 넘겨줌으로써 해당 값을 계속 사용하게 할 수 있다. 참조는 메모리 상의 특정 주소를 가리키며, 그 주소에 있는 데이터에 접근할 수 있게 해주는데, 이 데이터는 다른 변수가 소유하고 있다. 포인터와 달리 참조는 사용되는 동안 항상 유효한 타입의 값을 가리킨다는 것이 보장된다.
 
-다음은 소유권을 가져가는 대신 객체에 대한 참조를 매개변수로 갖는 calculate_length 함수를 정의하고 사용하는 방법이다:
+이제 객체를 넘기는 대신 참조를 매개변수로 사용하는 calculate_length 함수의 정의 및 사용 방법을 살펴보자:
 
-파일명: src/main.rs
+파일명: *src/main.rs*
 
 ```rs
 fn main() {
@@ -52,21 +52,21 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-변수 선언 및 함수 반환 값에서 튜플 코드가 모두 사라진 것을 볼 수 있다. 그리고 calculate_length에 &s1을 전달하고 그 정의에서 String 대신 &String을 사용한다. 이 앰퍼샌드는 참조를 나타내며 소유하지 않고도 값을 참조할 수 있다는 것을 의미한다. 아래 그림은 이 개념을 나타낸다.
+변수를 선언하고 함수의 반환값을 정의할 때 튜플을 사용하던 코드는 이제 보이지 않는다. calculate_length 함수에 &s1을 전달할 때, 그리고 그 함수의 매개변수 타입으로 String 대신 &String을 사용할 때 이 앰퍼샌드(&) 기호가 중요한 역할을 한다. 이 기호는 참조를 나타내며, 값을 소유하지 않고도 그 값을 참조할 수 있음을 의미한다. 다음은 이 개념을 도식화한 그림이다.
 
 > ![refandbor00](refandbor00.png)
 >
 > [그림 1-1] &String s가 String s1을 가리키는 다이어그램
-{: .prompt-img }
+{: .prompt-general }
 
 ---
 
-> 참고: &를 사용하는 참조와 반대되는 개념은 역참조로, * 연산자를 통해 수행된다.
+> 참고: 참조를 나타내는 &와는 반대되는 개념으로 역참조가 있다. 역참조는 * 연산자를 사용해서 이루어진다.
 {: .prompt-tip }
 
 ---
 
-이제 함수 호출에 대해 좀 더 자세히 알아보자:
+이제 함수 호출 과정에 대해 더 자세히 알아보자:
 
 ```rs
 let s1 = String::from("hello");
@@ -74,9 +74,9 @@ let s1 = String::from("hello");
 let len = calculate_length(&s1);
 ```
 
-s1의 값을 소유하지 않고 참조를 생성할 수 있는 &s1 문법을 사용한다. 그러므로 참조가 더 이상 사용되지 않을 때 가리키는 값은 해제되지 않는다.
+이 코드에서는 &s1을 통해 s1의 값을 소유하지 않으면서도 참조를 만들 수 있다. 그래서 참조를 더 이상 사용하지 않더라도, 참조가 가리키고 있는 값은 메모리에서 해제되지 않는다.
 
-마찬가지로 함수의 서명에서 매개변수 s의 타입이 참조임을 나타내기 위해 &를 사용한다. 설명을 위한 주석을 추가해 보자:
+함수 정의에서도 & 기호를 사용해서 매개변수 s가 참조임을 명시한다. 코드에 주석을 달아 추가 설명을 해보겠다:
 
 ```rs
 fn calculate_length(s: &String) -> usize { // s는 String에 대한 참조이다.
@@ -117,7 +117,7 @@ fn change(some_string: &String) {
 $ cargo run
    Compiling ownership v0.1.0 (file:///projects/ownership)
 error[E0596]: `*some_string`을 가변으로 빌리려 했으나, `&` 참조 뒤에 있기 때문에 불가능하다.
- --> src/main.rs:8:5
+ --> *src/main.rs*:8:5
   |
 7 | fn change(some_string: &String) {
   |                        ------- help: 이를 가변 참조로 변경하려면 `&mut String`으로 고려하자.
@@ -176,7 +176,7 @@ fn change(some_string: &mut String) {
 $ cargo run
    Compiling ownership v0.1.0 (file:///projects/ownership)
 error[E0499]: `s`를 한 번에 두 번 이상 가변으로 빌릴 수 없다.
- --> src/main.rs:5:14
+ --> *src/main.rs*:5:14
   |
 4 |     let r1 = &mut s;
   |              ------ 첫 번째 가변 빌림이 이곳에서 발생한다.
@@ -233,7 +233,7 @@ println!("{}, {}, 그리고 {}", r1, r2, r3);
 $ cargo run
    Compiling ownership v0.1.0 (file:///projects/ownership)
 error[E0502]: `s`에 대해 불변으로 빌린 상태에서 가변으로 빌릴 수 없다.
- --> src/main.rs:6:14
+ --> *src/main.rs*:6:14
   |
 4 |     let r1 = &s; 
   |              -- 불변 빌림 발생
@@ -269,6 +269,96 @@ println!("{}", r3);
 불변 참조 r1과 r2의 범위는 가변 참조 r3가 생성되기 전에, 그것들이 마지막으로 사용된 println! 이후에 끝난다. 이 범위들은 겹치지 않으므로 이 코드는 허용된다: 컴파일러는 참조가 더 이상 사용되지 않는 시점이 범위의 끝 전임을 알 수 있다.
 
 빌림에 관한 에러가 발생할 때마다, 이것이 Rust 컴파일러가 런타임 이전에 잠재적인 버그를 지적하고 문제의 원인을 정확히 알려주는 것이라는 점을 기억하자. 그러면 개발자는 왜 데이터가 자신이 생각했던 것과 다른지 추적할 필요가 없다.
+
+---
+
+## **허상 참조**
+
+포인터를 활용하는 프로그래밍 언어에서 메모리 해제 후 그 메모리를 참조하는 포인터를 남겨두면, 해당 메모리가 다른 곳에 재할당되어 버리는 허상 포인터를 실수로 만들기 쉽다. Rust는 다르다. 컴파일러는 참조가 절대 허상 참조가 되지 않도록 보장한다. 즉, 어떠한 데이터에 대한 참조를 가지고 있다면, 해당 데이터가 참조의 유효 범위를 벗어나지 않도록 컴파일러가 확실히 한다.
+
+Rust가 컴파일 타임 에러를 통해 허상 참조를 어떻게 방지하는지 실험해보자.
+
+파일명: *src/main.rs*
+
+> 아래 코드는 컴파일되지 않는다.
+{: .prompt-danger }
+
+```rs
+fn main() {
+    let reference_to_nothing = dangle();
+}
+
+fn dangle() -> &String {
+    let s = String::from("hello");
+
+    &s
+}
+```
+
+에러 메시지는 다음과 같다:
+
+```bash
+$ cargo run
+   Compiling ownership v0.1.0 (file:///projects/ownership)
+error[E0106]: missing lifetime specifier
+ --> *src/main.rs*:5:16
+  |
+5 | fn dangle() -> &String {
+  |                ^ expected named lifetime parameter
+  |
+  = help: 이 함수의 반환 타입에는 빌린 값이 포함되어 있지만, 빌릴 수 있는 값이 존재하지 않는다
+help: consider using the `'static` lifetime
+  |
+5 | fn dangle() -> &'static String {
+  |                 +++++++
+
+`rustc --explain E0106`을 실행하면 이 에러에 대한 자세한 정보를 얻을 수 있다.
+error: `ownership`을 컴파일할 수 없다. 이전 에러 때문이다.
+```
+
+아직 설명하지 않은 생명주기에 대한 기능을 이 에러 메시지가 언급하고 있다. 지금 단계에선, 생명주기 부분을 제외하고 본다면, 이 메시지는 코드에 문제가 있는 주된 이유를 담고 있다:
+
+```bash
+이 함수의 반환 타입에는 빌린 값이 포함되어 있지만, 빌릴 수 있는 값이 존재하지 않는다
+```
+
+dangle 코드의 각 단계에서 정확히 어떤 일이 일어나는지 자세히 살펴보자.
+
+파일명: *src/main.rs*
+
+```rs
+fn dangle() -> &String { // dangle은 String에 대한 참조를 반환한다
+
+    let s = String::from("hello"); // s는 새로 생성된 String이다
+
+    &s // 여기서 String s에 대한 참조를 반환한다
+} // 이 지점에서 s는 유효 범위를 벗어나고, 메모리에서 해제된다. 이는 위험하다!
+```
+
+s는 dangle 함수 내부에서 생성되었기 때문에, 함수가 끝나면 s는 자동으로 해제된다. 그러나 우리는 그것에 대한 참조를 반환하려 했다. 이는 이 참조가 유효하지 않은 String을 가리키게 됨을 의미한다. Rust는 이런 상황을 허용하지 않는다.
+
+문제를 해결하는 방법은 String을 직접 반환하는 것이다:
+
+```rs
+fn no_dangle() -> String {
+    let s = String::from("hello");
+
+    s
+}
+```
+
+이렇게 하면 소유권이 이동되고 어떤 것도 해제되지 않으므로 문제 없이 작동한다.
+
+---
+
+## **참조의 규칙들**
+
+참조의 규칙들을 다시 짚어보자:
+
+- 어떤 시점에도 우리는 하나의 가변 참조 또는 여러 개의 불변 참조 중 하나를 가질 수 있다.
+- 참조는 반드시 유효해야 한다.
+
+이제 우리는 참조의 다른 형태인 슬라이스를 살펴볼 것이다.
 
 ---
 
