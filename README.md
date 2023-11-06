@@ -101,6 +101,7 @@ img, general, tip, info, warning, danger
 - run time: 런타임
 - Dangling Pointer: 허상 포인터
 - Dangling References: 허상 참조
+- Methos: 메서드
 
 ---
 
