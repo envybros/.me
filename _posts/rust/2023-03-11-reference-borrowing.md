@@ -1,7 +1,7 @@
 ---
 title: "[Rust] 참조와 빌림"
 categories: [Rust 연구소]
-tags: [Rust, Control-flow]
+tags: [Rust, Reference, Borrowing]
 date: 2023-03-11 01:30
 img_path: /assets/img/rust/
 ---
