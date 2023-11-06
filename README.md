@@ -99,6 +99,8 @@ img, general, tip, info, warning, danger
 - scope: 유효 범위
 - compile time: 컴파일 타임
 - run time: 런타임
+- Dangling Pointer: 허상 포인터
+- Dangling References: 허상 참조
 
 ---
 
