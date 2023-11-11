@@ -42,6 +42,7 @@ img, general, tip, info, warning, danger
 - prefix: 구간
 - prefix sum: 구간 합
 - Example: 예제
+- data structures: 자료 구조
 
 ---
 
