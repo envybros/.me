@@ -1,35 +1,74 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
+
+fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    let mut dic: HashMap<i32, i32> = HashMap::new();
+
+    for (i, &num) in nums.iter().enumerate() {
+        let complement = target - num;
+        if let Some(&complement_index) = dic.get(&complement) {
+            return vec![i as i32, complement_index];
+        }
+
+        dic.insert(num, i as i32);
+    }
+
+    vec![-1, -1]
+}
+
+fn repeated_character_bruce_force(s: &str) -> char {
+    for (i, c) in s.chars().enumerate() {
+        for j in s[..i].chars() {
+            if j == c {
+                return c;
+            }
+        }
+    }
+
+    ' ' // 두 번 나타나는 문자가 없는 경우
+}
+
+fn repeated_character(s: &str) -> char {
+    let mut seen: HashSet<char> = HashSet::new();
+
+    for c in s.chars() {
+        if seen.contains(&c) {
+            return c;
+        }
+
+        seen.insert(c);
+    }
+
+    ' '
+}
+
+fn find_numbers(nums: Vec<i32>) -> Vec<i32> {
+    let nums_set: HashSet<i32> = nums.iter().cloned().collect();
+    let mut ans: Vec<i32> = Vec::new();
+
+    for &num in &nums {
+        if !nums_set.contains(&(num + 1)) && !nums_set.contains(&(num - 1)) {
+            ans.push(num);
+        }
+    }
+
+    ans
+}
 
 fn main() {
-    // 선언 및 초기화: Rust에서는 타입을 명시적으로 선언해야 한다.
-    // 여기서는 i32 타입의 키와 값을 갖는 HashMap을 생성한다.
-    let mut hash_map: HashMap<i32, i32> = HashMap::new();
+    let s = "abccba";
+    let result = repeated_character_bruce_force(s);
+    let result2 = repeated_character(s);
+    println!("{:?}", result);
+    println!("{:?}", result2);
 
-    // 초기값을 가진 HashMap을 생성하는 다른 방법:
-    let mut hash_map: HashMap<i32, i32> = [(1, 2), (5, 3), (7, 2)].iter().cloned().collect();
 
-    // 키의 존재 여부를 확인하려면 contains_key 메소드를 사용한다:
-    println!("{}", hash_map.contains_key(&1)); // true 출력
-    println!("{}", hash_map.contains_key(&9)); // false 출력
+    let nums = vec![2, 7, 11, 15];
+    let target = 9;
+    let result3 = two_sum(nums, target);
 
-    // 주어진 키로 값에 접근하려면, get 메소드를 사용하고 결과를 unwrap한다.
-    // 값이 없는 경우 대비해 unwrap_or 메소드로 기본값을 제공한다.
-    println!("{}", hash_map.get(&5).unwrap_or(&-1)); // 3 출력
+    println!("{:?}", result3);
 
-    // 키에 값을 추가하거나 업데이트하려면 insert 메소드를 사용한다.
-    hash_map.insert(5, 6);
-
-    // 키가 존재하지 않을 경우, 새 키-값 쌍이 삽입된다.
-    hash_map.insert(9, 15);
-
-    // 키를 삭제하려면 remove 메소드를 사용한다.
-    hash_map.remove(&9);
-
-    // 해시 맵의 크기를 알아보려면 len 메소드를 사용한다.
-    println!("{}", hash_map.len()); // 3 출력
-
-    // 키와 값의 쌍을 순회하며 출력하려면 for 루프를 사용한다.
-    for (key, value) in &hash_map {
-        println!("{} {}", key, value);
-    }
+    let nums = vec![1, 3, 5, 7, 8];
+    let result4 = find_numbers(nums);
+    println!("{:?}", result4);
 }

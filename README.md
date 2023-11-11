@@ -62,7 +62,7 @@ img, general, tip, info, warning, danger
 ## 추가 요청 사항
 
 - 아래 CPP코드를 Rust로 바꿔야 한다.
-- 또한 main 함수를 통해, 테스트 코드도 만들어주길 바란다.
+- 또한 main 함수를 통해, 테스트 코드도 만들어 주길 바란다.
 - main문은 `println!("{:?}", result);`이 포함되어야 한다.
 
 ---
