@@ -124,7 +124,32 @@ fn subarray_sum(nums: &[i32], k: i32) -> i32 {
     ans
 }
 
+fn number_of_subarrays(nums: &[i32], k: i32) -> i32 {
+    let mut counts = HashMap::new();
+    counts.insert(0, 1);
+    let (mut ans, mut curr) = (0, 0);
+
+    for &num in nums {
+        curr += num % 2;
+        ans += *counts.get(&(curr - k)).unwrap_or(&0);
+        *counts.entry(curr).or_insert(0) += 1;
+    }
+
+    ans
+}
+
 fn main() {
+    let nums = vec![1, 1, 2, 1, 1];
+    let k = 3;
+    let result = number_of_subarrays(&nums, k);
+    println!("{:?}", result); // 출력 예시: 2
+
+    // 추가 테스트 케이스
+    let nums = vec![2, 4, 6, 8, 10];
+    let k = 1;
+    let result = number_of_subarrays(&nums, k);
+    println!("{:?}", result); // 출력 예시: 0
+
     let nums = vec![1, 2, 1, 2, 1];
     let k = 3;
     let result = subarray_sum(&nums, k);
