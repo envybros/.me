@@ -2,7 +2,7 @@
 title: "[DSA] 해시 맵을 활용한 추가 예제"
 categories: [Algorithm 연구소]
 tags: [Algorithm, DSA, Hashing]
-date: 2022-08-13 02:30
+date: 2022-08-14 02:30
 math: true
 img_path: /assets/img/algorithm/
 ---
@@ -381,6 +381,9 @@ int equalPairs(vector<vector<int>>& grid) {
 
 ## **보너스 문제**
 
+- [383. Ransom Note](https://leetcode.com/problems/ransom-note/)
+- [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)
+- [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
 - [290. Word Pattern](https://leetcode.com/problems/word-pattern/)
 - [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/)
