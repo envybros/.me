@@ -138,7 +138,75 @@ fn number_of_subarrays(nums: &[i32], k: i32) -> i32 {
     ans
 }
 
+fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
+    let mut group: HashMap<String, Vec<String>> = HashMap::new();
+
+    for s in strs.iter() {
+        let mut t = s.clone();
+        let mut chars: Vec<char> = t.chars().collect();
+        chars.sort_unstable();
+        t = chars.into_iter().collect();
+
+        group.entry(t).or_insert(Vec::new()).push(s.clone());
+    }
+
+    group.into_values().collect()
+}
+
+fn minimum_card_pickup(cards: Vec<i32>) -> i32 {
+    let mut dic: HashMap<i32, Vec<usize>> = HashMap::new();
+
+    for (i, &card) in cards.iter().enumerate() {
+        dic.entry(card).or_default().push(i);
+    }
+
+    let mut ans = i32::MAX;
+    for arr in dic.values() {
+        for window in arr.windows(2) {
+            if let [a, b] = window {
+                ans = ans.min((b - a) as i32 + 1);
+            }
+        }
+    }
+
+    if ans == i32::MAX { -1 } else { ans }
+}
+
+fn minimum_card_pickup_optimized(cards: Vec<i32>) -> i32 {
+    let mut dic: HashMap<i32, usize> = HashMap::new();
+    let mut ans = i32::MAX;
+
+    for (i, &card) in cards.iter().enumerate() {
+        if let Some(&last_index) = dic.get(&card) {
+            ans = ans.min(i as i32 - last_index as i32 + 1);
+        }
+        dic.insert(card, i);
+    }
+
+    if ans == i32::MAX { -1 } else { ans }
+}
+
 fn main() {
+    let cards = vec![1, 2, 6, 2, 1];
+    let result = minimum_card_pickup_optimized(cards);
+    println!("{:?}", result);
+
+    let cards = vec![1, 2, 6, 2, 1];
+    let result = minimum_card_pickup(cards);
+    println!("{:?}", result);
+
+    let strs = vec![
+        "eat".to_string(),
+        "tea".to_string(),
+        "tan".to_string(),
+        "ate".to_string(),
+        "nat".to_string(),
+        "bat".to_string(),
+    ];
+
+    let result = group_anagrams(strs);
+    println!("{:?}", result);
+
     let nums = vec![1, 1, 2, 1, 1];
     let k = 3;
     let result = number_of_subarrays(&nums, k);
